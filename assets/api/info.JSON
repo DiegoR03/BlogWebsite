@@ -1,0 +1,29 @@
+{
+    "topic": [
+        {
+            "event": "Weekly Nerd",
+            "speaker": "Kilian Valkhoff",
+            "date": "2026-02-04",
+            "infos": [
+                {
+                "title": "The Rule of Least Power",
+                "content": "Kies de minst krachtige taal: HTML > CSS > JavaScript. JS is krachtig maar breekbaar."
+                },
+                {
+                "title": "Modern UI Elements",
+                "content": "Gebruik native elementen zoals <details> voor accordions en <dialog> voor pop-ups."
+                }
+            ],
+            "cssTips": [
+                { "selector": "appearance: none", "note": "Verwijdert standaard styling voor eigen regie." },
+                { "selector": "input:focus-visible", "note": "Bied altijd een alternatief voor outline: none." }
+            ],
+            "codeExamples": [
+                {
+                "language": "css",
+                "code": "#my-target:target { outline: 10px solid deeppink; transition: 1s ease-in-out outline; }"
+                }
+            ]
+        }
+    ]
+}
