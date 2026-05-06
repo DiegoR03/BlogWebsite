@@ -17,5 +17,8 @@ Ik heb een paar verschillende pagina's in gedachte, of secties in dit geval: <br
 // Meesterproef informatie pagina 
 <img width="1920" height="1080" alt="Frame 3" src="https://github.com/user-attachments/assets/6b02ab24-1be8-4708-ab57-771001161f8c" />
 
-
+## Bronnen
+- Aarde : https://sketchfab.com/3d-models/earth-5f9c35be31a047928eace8b415a8ee3a#download
+- Satteliet : https://sketchfab.com/3d-models/simple-satellite-low-poly-free-f23b484cda664f1cb91b4f62ea5ef8bf
+- Maan : https://sketchfab.com/3d-models/moon-2b66072c7bbf47639535dd30b5e65106
 
