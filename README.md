@@ -17,8 +17,58 @@ Ik heb een paar verschillende pagina's in gedachte, of secties in dit geval: <br
 // Meesterproef informatie pagina 
 <img width="1920" height="1080" alt="Frame 3" src="https://github.com/user-attachments/assets/6b02ab24-1be8-4708-ab57-771001161f8c" />
 
+## 07/05/2026
+- 10:30 > 13:30 Zelfstandig werken
+- 20:30 > 22:00 Zelfstandig werken
+
+ ### Uitleg
+ Vandaag heb ik een start gemaakt aan het maken van mijn blog website, en ik moet toegeven dat ik echt niet had verwacht dat ik zo ver zou komen als da tik ben gekomen. Ik heb al meteen een renderer kunnen maken voor de 3D objecten en heb zelfs al de JSON objecten kunnen verwerken naar buttons. Ik ben voornamelijk bezig geweest met het verwerken, toepassen en troevoegen van de 3D objecten naar logische blog elementen. Ik zal elk detial een beetje uitleggen:
+ <br><br>
+ Als eerste heb ik gewerkt aan het renderen van de 3D objecten, dit heb ik gedaan door middel van `Three.js`. Three.js kan je importeren als `import * as THREE from 'three';` in de code, en vanuit daar kan je addons toevoegen zoals `GLTFLoader` en `OrbitControls`. Door deze code te combineren de `WebGLRenderer` van Three.js wist ik een 3D object te renderen binnen de website, het eerst object dat ik wist te renderen was de aarde (earth.gbl): <br>
+<img width="622" height="572" alt="31328da0e246b8e8fc089367026aa51d-ezgif com-optimize (1)" src="https://github.com/user-attachments/assets/65a1ccbd-370a-44f1-ba3a-696bb26b88d0" />
+
+<br>
+Daarna heb ik andere objecten toegevoegd zoals de satellite.glb en de moon.glb, maar ik heb met deze objecten nog niet veel gedaan naast het in renderen en het resizen van deze objecten.
+<br>
+Ik ben ook bezig geweest met het verwerken van de JSON informatie naar HTML objecten, op dit moment heb ik al verschillende informatie van javscript naar HTML kunnen vertralen: <br><br>
+
+``` 
+async function loadInfo() {
+    try {
+        const response = await fetch('assets/api/info.json')
+        const data = await response.json();
+
+        const container = document.getElementById('weekly-nerd-container');
+
+        const selectorContainer = document.getElementById('selector-list');
+
+        data.topic.forEach((nerd, index) => {
+            const selectorList = `
+                <li>
+                    <h2>Satteliet ${index + 1}</h2>
+                    <h2>${nerd.eventTitle}</h2>
+                    <p><em>${nerd.speaker} - ${nerd.date}</em></p>
+                </li>
+            `
+
+            selectorContainer.insertAdjacentHTML('beforeend', selectorList);
+        });
+
+    } catch (error) {
+        console.error("Oeps, er ging iets mis met het laden van de data:", error);
+    }
+}
+
+loadInfo();
+``` 
+<br>
+Op dit moment wordt dit op de website laten zien als een simpele lijst, maar uiteindelijk wil ik hier focus buttons van maken zodat je de satteliet volgt en de informatie per satteliet ziet: <br>
+<img width="432" height="918" alt="image" src="https://github.com/user-attachments/assets/92cb6859-61bc-425d-a850-a3aabcce48a3" />
+
+
 ## Bronnen
 - Aarde : https://sketchfab.com/3d-models/earth-5f9c35be31a047928eace8b415a8ee3a#download
 - Satteliet : https://sketchfab.com/3d-models/simple-satellite-low-poly-free-f23b484cda664f1cb91b4f62ea5ef8bf
 - Maan : https://sketchfab.com/3d-models/moon-2b66072c7bbf47639535dd30b5e65106
+- Three.js : https://threejs.org/docs/
 
