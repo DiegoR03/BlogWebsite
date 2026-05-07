@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Blog Website</title>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <body>
-    <section>
+    <div id="info">Laden van de aarde...</div>
+
+    <!-- 
+        <section id="weekly-nerd-container">
         <h2>Weekly Nerds</h2>
-        <div>
-            <h3>Nerd 1</h3>
-        </div>
-        <div>
-            <h3>Nerd 2</h3>
-        </div>
-        <div>
-            <h3>Nerd 3</h3>
-        </div>
-        <div>
-            <h3>Nerd 4</h3>
-        </div>
     </section>
     <section>
         <h2>Sprint 0</h2>
@@ -30,8 +23,21 @@
     </section>
     <section>
         <h2>Uitkomsten vakken </h2>
-    </section>
+    </section> 
+    -->
 
-    <script src="index.js"></script>
+    <!-- Met behulp van Gemini een importmap gemaakt -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="/js/3drenderer.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/nebula.js"></script>
+    <script src="/js/stars.js"></script>
 </body>
 </html>
