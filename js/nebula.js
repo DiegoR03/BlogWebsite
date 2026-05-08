@@ -3,7 +3,7 @@
 const Nebula_Config = {
     Blob_Count: 30,
     Color_1: "#03041b",
-    Color_2: "#0d337e4d",
+    Color_2: "#0a265f4d",
     Color_3: "#000000c4",
 }
 

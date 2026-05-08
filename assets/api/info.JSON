@@ -52,19 +52,19 @@
             "codeExamples": [
                 {
                     "language": "css",
-                    "code": "#my-target:target { outline: 10px solid deeppink; transition: 1s ease-in-out outline; }"
+                    "code": "#my-target:target {\n outline: 10px solid deeppink;\n transition: 1s ease-in-out outline;\n }"
                 },
                 {
                     "language": "css",
-                    "code": "dialog{ opacity: 1; transform: scale(1);transition: all 0.5s ease-in-out; @starting-style { opacity: 0; transform: scale(0.8;}"
+                    "code": "dialog{\n opacity: 1;\n transform: scale(1);\n transition: all 0.5s ease-in-out;\n @starting-style {\n opacity: 0;\n transform: scale(0.8;\n}"
                 },
                 {
                     "language": "css",
-                    "code": "input textarea { field-sizing: content }"
+                    "code": "input textarea {\n field-sizing: content; \n}"
                 },
                 {
                     "language": "css",
-                    "code": "select::picker(select) { appearance: base-select; }"
+                    "code": "select::picker(select) {\n appearance: base-select; \n }"
                 }
             ]
         },
@@ -112,19 +112,19 @@
             "codeExamples": [
                 {
                     "language": "css",
-                    "code": "#my-target:target { outline: 10px solid deeppink; transition: 1s ease-in-out outline; }"
+                    "code": "#my-target:target {\n outline: 10px solid deeppink;\n transition: 1s ease-in-out outline; \n}"
                 },
                 {
                     "language": "css",
-                    "code": "dialog{ opacity: 1; transform: scale(1);transition: all 0.5s ease-in-out; @starting-style { opacity: 0; transform: scale(0.8;}"
+                    "code": "dialog{\n opacity: 1;\n transform: scale(1);\n transition: all 0.5s ease-in-out;\n @starting-style\n { \nopacity: 0; transform: scale(0.8;\n}"
                 },
                 {
                     "language": "css",
-                    "code": "input textarea { field-sizing: content }"
+                    "code": "input textarea {\n field-sizing: content \n}"
                 },
                 {
                     "language": "css",
-                    "code": "select::picker(select) { appearance: base-select; }"
+                    "code": "select::picker(select) {\n appearance: base-select; \n}"
                 }
             ]
         },

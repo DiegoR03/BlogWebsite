@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Blog Website</title>
+    <title>Meesterschap | Diego Ramon</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/Sattelite_Image.png">
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
-<body>
-    <div id="info">Laden van de aarde...</div>
 
-    <!-- 
-        <section id="weekly-nerd-container">
-        <h2>Weekly Nerds</h2>
-    </section>
-    <section>
-        <h2>Sprint 0</h2>
-    </section>
-    <section>
-        <h2>Hackathon </h2>
-    </section>
-    <section>
-        <h2>Uitkomsten vakken </h2>
-    </section> 
-    -->
+<body>
+
+    <div id="titleSelector">
+        <ul>
+            <li><button onclick="filterByEvent('Weekly Nerd')">Weekly Nerd</button></li>
+            <li><button onclick="filterByEvent('Sprint 0')">Sprint 0</button></li>
+            <li><button onclick="filterByEvent('Hackaton')">Hackaton</button></li>
+            <li><button onclick="filterByEvent('Weekly Geek')">Weekly Geek</button></li>
+            <li><button onclick="filterByEvent('Andere vakken')">Andere vakken</button></li>
+            <li><button onclick="filterByEvent('Meesterproef')">Meesterproef</button></li>
+            <li><button onclick="filterByEvent('Check outs')">Check outs</button></li>
+        </ul>
+    </div>
+
+    <div id="selector-container">
+        <ul id="selector-list">
+        </ul>
+    </div>
+
+    <div id="details-container">
+        <button onclick="resetFocus()" style="margin-bottom: 15px; cursor: pointer;">← Terug naar overzicht</button>
+        <div id="details-content">
+        </div>
+    </div>
+
 
     <!-- Met behulp van Gemini een importmap gemaakt -->
     <script type="importmap">
@@ -40,4 +51,5 @@
     <script src="/js/nebula.js"></script>
     <script src="/js/stars.js"></script>
 </body>
+
 </html>
