@@ -1,0 +1,107 @@
+#loadingScreen {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 2, 8);
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    animation: introFade 5s ease-out forwards;
+    pointer-events: none;
+
+    p{
+        color: white;
+        z-index: 5;
+        bottom: 5rem;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+}
+
+#loadingScreen div {
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background: var(--color);
+    width: var(--size);
+}
+
+/* Sun Icon */
+.sun {
+    --size: 5rem;
+    --color: radial-gradient(circle, #ffdd33, #ff9933);
+    box-shadow: 0 0 3rem 1rem rgba(255, 153, 51, 0.7);
+}
+
+/* Earth & Moon Icon */
+.earth,
+.moon {
+    top: 0;
+
+    &::before{
+        content: '';
+        position: absolute;
+    }
+}
+
+.earth {
+    --size: 2rem;
+    --color: radial-gradient(circle at 15px 15px, #2a8bd0, #1b5f80);
+    top: 0; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1rem 0.1rem rgba(4, 86, 238, 0.7);
+}
+
+.moon {
+    --color: #ccc;
+    --size: .5rem;
+}
+
+/* Orbits */
+.orbit-earth {
+    --size: 35rem;
+    --color: transparent;
+    --path-color: rgba(83, 83, 83, 0.9);
+    --time: 5s;
+    animation: orbit 36.5s linear infinite;
+}
+
+.orbit-earth,
+.orbit-moon {
+    --color: transparent;
+    --margin: calc(var(--size) / -3);
+    border: .1ch dashed var(--path-color);
+    margin: var(--margin);
+    animation: orbit var(--time) linear infinite;
+}
+
+.orbit-moon {
+    --size: 6rem;
+    --path-color: rgba(30, 30, 30, 0.3);
+    --time: 1.7s;
+    animation-direction: reverse;
+}
+
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes introFade {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

@@ -1,309 +1,563 @@
 {
-    "topic": [
-        {
-            "event": "Weekly Nerd",
-            "eventTitle": "The Rule of Least Power",
-            "speaker": "Kilian Valkhoff",
-            "date": "04-02-2026",
-            "infos": [
-                {
-                    "title": "The Rule of Least Power",
-                    "content": "Kies de minst krachtige taal: HTML > CSS > JavaScript. JS is krachtig maar breekbaar."
-                },
-                {
-                    "title": "Modern UI Elements",
-                    "content": "Gebruik native elementen zoals details voor accordions en dialog voor pop-ups."
-                },
-                {
-                    "title": "Backwards Compatible",
-                    "content": "Nieuwe websites moeten beschikbaar kunnen zijn op oude browsers, en oude websites moeten ook compatible zijn op nieuwe websites."
-                }
-            ],
-            "cssTips": [
-                {
-                    "selector": "appearance: none",
-                    "note": "Verwijdert standaard styling zodat je zelf kan stylen."
-                },
-                {
-                    "selector": "input:focus-visible",
-                    "note": "Een alternatief voor outline: none."
-                },
-                {
-                    "selector": "content: ''",
-                    "note": "Alleen getoont met tekstuele content (before) doet het niet als er geen content is"
-                },
-                {
-                    "selector": "@mediaquery",
-                    "note": "Minder animaties en beweging, opties zijn Reduced en No Prefrence"
-                },
-                {
-                    "selector": "scroll-margin-top",
-                    "note": "Scrollt smoothly naar het element waar je naar toe gaat."
-                },
-                {
-                    "selector": "summary::marker",
-                    "note": "Kleine pijltje naast een summary, vernaderd met [open]summary::marker"
-                },
-                {
-                    "selector": "dialog",
-                    "note": "Interactief element, werkt voor elementen zoals een popover en de functie onclick.Showmodal, komt altijd midden het het scherm tevoorschijn"
-                }
-            ],
-            "codeExamples": [
-                {
-                    "language": "css",
-                    "code": "#my-target:target {\n outline: 10px solid deeppink;\n transition: 1s ease-in-out outline;\n }"
-                },
-                {
-                    "language": "css",
-                    "code": "dialog{\n opacity: 1;\n transform: scale(1);\n transition: all 0.5s ease-in-out;\n @starting-style {\n opacity: 0;\n transform: scale(0.8;\n}"
-                },
-                {
-                    "language": "css",
-                    "code": "input textarea {\n field-sizing: content; \n}"
-                },
-                {
-                    "language": "css",
-                    "code": "select::picker(select) {\n appearance: base-select; \n }"
-                }
-            ]
-        },
-        {
-            "event": "Weekly Nerd",
-            "eventTitle": "Browser en support detection",
-            "speaker": "Peter Paul Koch",
-            "date": "19-02-2026",
-            "infos": [
-                {
-                    "title": "Browser en support detection",
-                    "content": "Kies de minst krachtige taal: HTML > CSS > JavaScript. JS is krachtig maar breekbaar."
-                }
-            ],
-            "cssTips": [
-                {
-                    "selector": "appearance: none",
-                    "note": "Verwijdert standaard styling zodat je zelf kan stylen."
-                },
-                {
-                    "selector": "input:focus-visible",
-                    "note": "Een alternatief voor outline: none."
-                },
-                {
-                    "selector": "content: ''",
-                    "note": "Alleen getoont met tekstuele content (before) doet het niet als er geen content is"
-                },
-                {
-                    "selector": "@mediaquery",
-                    "note": "Minder animaties en beweging, opties zijn Reduced en No Prefrence"
-                },
-                {
-                    "selector": "scroll-margin-top",
-                    "note": "Scrollt smoothly naar het element waar je naar toe gaat."
-                },
-                {
-                    "selector": "summary::marker",
-                    "note": "Kleine pijltje naast een summary, vernaderd met [open]summary::marker"
-                },
-                {
-                    "selector": "dialog",
-                    "note": "Interactief element, werkt voor elementen zoals een popover en de functie onclick.Showmodal, komt altijd midden het het scherm tevoorschijn"
-                }
-            ],
-            "codeExamples": [
-                {
-                    "language": "css",
-                    "code": "#my-target:target {\n outline: 10px solid deeppink;\n transition: 1s ease-in-out outline; \n}"
-                },
-                {
-                    "language": "css",
-                    "code": "dialog{\n opacity: 1;\n transform: scale(1);\n transition: all 0.5s ease-in-out;\n @starting-style\n { \nopacity: 0; transform: scale(0.8;\n}"
-                },
-                {
-                    "language": "css",
-                    "code": "input textarea {\n field-sizing: content \n}"
-                },
-                {
-                    "language": "css",
-                    "code": "select::picker(select) {\n appearance: base-select; \n}"
-                }
-            ]
-        },
-        {
-            "event": "Weekly Nerd",
-            "eventTitle": "9elements & CSS Day",
-            "speaker": "Nils Binder (9elements)",
-            "date": "04-03-2026",
-            "infos": [
-                {
-                    "title": "Disciplines",
-                    "content": "Communication Design, Web development, Product development -> all together"
-                },
-                {
-                    "title": "Office Culture",
-                    "content": "Keep everyone in the office, but after covid different"
-                },
-                {
-                    "title": "Projects & Links",
-                    "content": "9elements.com, Made UX for football club in germany, Oecd, R26.rurh, Ernst-co.com"
-                },
-                {
-                    "title": "Css day 2023",
-                    "content": "Tinkerer by night - Sanne, Creative coding- Jhey topkins, Personal websites Sophie koonin, Building component - Stephanie reckless, Structuring & restructuring - Manuel matuzovic, Selector performance - patrick brosset"
-                },
-                {
-                    "title": "Design History",
-                    "content": "Photoshop to design websites -> Figma. 2016 -> too many websites are the same -> figma was created"
-                },
-                {
-                    "title": "Trends & Tools",
-                    "content": "Tailwind, Now -> AI, View-transitions are new, transitions between pages"
-                },
-                {
-                    "title": "Animation Note",
-                    "content": "Steps make the animation go in 32 steps?"
-                }
-            ],
-            "cssTips": [
-                {
-                    "selector": "Flexbox",
-                    "note": "Flex direction, Flex wrap, Justify content, Align items, Gap, Padding"
-                },
-                {
-                    "selector": "Variables",
-                    "note": "Variables for colors and other objects"
-                },
-                {
-                    "selector": "fr unit",
-                    "note": "Fr (fraction) unit in CSS -> available space left"
-                },
-                {
-                    "selector": "mix-blend-mode",
-                    "note": "Mix-blend-mode: difference. Blend mode gives different colors to image"
-                },
-                {
-                    "selector": "position: sticky",
-                    "note": "to make things stick to a side of the screen"
-                }
-            ],
-            "codeExamples": [
-                {
-                    "language": "css",
-                    "code": "animation: stop-motion 3s steps(31, end) infinite"
-                }
-            ]
-        },
-        {
-            "event": "Weekly Nerd",
-            "eventTitle": "Alternative Digital infrastructure",
-            "speaker": "Rosa",
-            "date": "02-04-2026",
-            "infos": [
-                {
-                    "title": "DIY / DIWO",
-                    "content": "Doe het zelf, Zelf ≠ alleen. Zodat je er achter komt hoeveel je gewoon zelf kunt. Hoe meer je weer zelf maakt, hoe meer je zelf in controle blijft."
-                },
-                {
-                    "title": "Community & Events",
-                    "content": "Elke donderdagavond in Rotterdam. LAG social evening elke vrijdagavond."
-                },
-                {
-                    "title": "Problematiek: Afhankelijkheid",
-                    "content": "Planned Obsolescence werkt reparatie en hacken actief tegen. Enige oplossing lijkt nieuw kopen. Grotere afhankelijkheid van (Amerikaanse) big tech (consument, producent, overheid). Belastingdienst kiest voor Amerikaanse leverancier. Verwijderd van de materialiteit."
-                },
-                {
-                    "title": "Static site generators",
-                    "content": "Minder impact Op de server. If all fails hebben we de markdown nog. Leesbare code! 11ty (grote community, veel documentatir). Update eens per dag/nacht."
-                },
-                {
-                    "title": "Server Management & Hosting",
-                    "content": "Yuno Host: Doet alles voor je bij het opletten van servers. Oude software (servers) heeft impact op keuzes in framework en nieuwe snufjes Html/css/js."
-                }
-            ],
-            "selfHostingList": [
-                {
-                    "category": "Git",
-                    "tools": "gitea, forgejo???"
-                },
-                {
-                    "category": "Messaging platform",
-                    "tools": "zulip, libera chat"
-                },
-                {
-                    "category": "Websites",
-                    "tools": "Je eigen websites"
-                },
-                {
-                    "category": "Audio",
-                    "tools": "Een radio show / met Icecast2???"
-                }
-            ],
-            "notes": [
-                {
-                    "topic": "Alternatieven",
-                    "content": "Andere (vaak oude) soorten systemen. Deze zijn vaak onafhankelijk."
-                }
-            ],
-            "codeExamples": [
-                {
-                    "language": "[Geen]",
-                    "code": "[Geen]"
-                }
-            ]
-        },
-        {
-            "event": "Weekly Nerd",
-            "eventTitle": "Accessibility",
-            "speaker": "Johann Huijkman",
-            "date": "09-04-2026",
-            "infos": [
-                {
-                    "title": "Kernprincipe",
-                    "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf."
-                },
-                {
-                    "title": "POUR Principes",
-                    "content": "- Perceivable, - Operable, - Understandable, - Robust"
-                },
-                {
-                    "title": "WCAG Opmerking",
-                    "content": "Web Content Accessibility Guidelines (WCAG) 2.2 heeft een Enige focus op visuele beperkingen. Nog steeds handig om te gebruiken, maar niet het enige wat je moet gebruiken als je iets toegankelijk wilt maken."
-                },
-                {
-                    "title": "Screen Reader & Navigatie",
-                    "content": "Elke afbeelding moet een alt atribuut hebben, anders leest hij de image zelf voor. Van kop naar kop springen zodat iemand sneller kan navigeren inplaats van elk element af te gaan en voor te lezen. H1-h8 is heel belangrijk voor een screen reader. Cookies gelijk boven aan zodat je die gelijk weg kan klikken."
-                },
-                {
-                    "title": "User Test: Martijn (Slechtziend)",
-                    "content": "Websites die verspringen zijn heel vervelend. Bij inzoomen werken ze niet mee waardoor iemand snel duizelig kan worden. Nodig: Schaalbaarheid, Contrast, Gerelateerde informatie bij elkaar, Visuele indicatoren zoals een focusrand."
-                },
-                {
-                    "title": "User Test: Naduah (Motoriek & Prikkelbaar)",
-                    "content": "Velle kleuren triggered migraine. Veel info kost teveel concentratie. Last van handen bij lang zoeken. Nodig: rustige lay-out en vormgeving, gegevens kunnen bewaren, aanpasbare tijdslimiet, dark/light mode."
-                },
-                {
-                    "title": "User Test: Guido (Autisme Spectrum)",
-                    "content": "Visuele en audio prikkels komen extra hard binnen (geen filter). Advertenties zijn overlast. Wil meteen weten wat in te vullen. Nodig: Rustige layout en vormgeving, Duidelijke instructies en meldingen, Voorspelbaarheid."
-                },
-                {
-                    "title": "Workflow",
-                    "content": "1. Ervaar, 2. Laat ervaren, 3. Pas aan, Herhaal"
-                }
-            ],
-            "questions": [
-                {
-                    "question": "Hoe optimaliseer je hiervoor??",
-                    "points": [
-                        "Wat maakt het voor hem/haar moeilijk?",
-                        "Wat heeft hij/zij nodig"
-                    ]
-                }
-            ],
-            "codeExamples": [
-                {
-                    "language": "[Geen]",
-                    "code": "[Geen]"
-                }
-            ]
-        }
-    ]
+    "events": {
+        "Weekly Nerd": [
+            {
+                "eventTitle": "The Rule of Least Power",
+                "speaker": "Kilian Valkhoff",
+                "date": "04-02-2026",
+                "infos": [
+                    {
+                        "title": "The Rule of Least Power",
+                        "content": "Kies de minst krachtige taal: HTML > CSS > JavaScript. JS is krachtig maar breekbaar."
+                    },
+                    {
+                        "title": "Modern UI Elements",
+                        "content": "Gebruik native elementen zoals details voor accordions en dialog voor pop-ups."
+                    },
+                    {
+                        "title": "Backwards Compatible",
+                        "content": "Nieuwe websites moeten beschikbaar kunnen zijn op oude browsers, en oude websites moeten ook compatible zijn op nieuwe websites."
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "appearance: none",
+                        "note": "Verwijdert standaard styling zodat je zelf kan stylen."
+                    },
+                    {
+                        "selector": "input:focus-visible",
+                        "note": "Een alternatief voor outline: none."
+                    },
+                    {
+                        "selector": "content: '&#9'",
+                        "note": "Alleen getoont met tekstuele content (before) doet het niet als er geen content is"
+                    },
+                    {
+                        "selector": "@mediaquery",
+                        "note": "Minder animaties en beweging, opties zijn Reduced en No Prefrence"
+                    },
+                    {
+                        "selector": "scroll-margin-top",
+                        "note": "Scrollt smoothly naar het element waar je naar toe gaat."
+                    },
+                    {
+                        "selector": "summary::marker",
+                        "note": "Kleine pijltje naast een summary, vernaderd met [open]summary::marker"
+                    },
+                    {
+                        "selector": "dialog",
+                        "note": "Interactief element, werkt voor elementen zoals een popover en de functie onclick.Showmodal, komt altijd midden het het scherm tevoorschijn"
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "css",
+                        "code": "#my-target:target {\n &#9 outline: 10px solid deeppink;\n &#9 transition: 1s ease-in-out outline;\n }"
+                    },
+                    {
+                        "language": "css",
+                        "code": "dialog{\n &#9 opacity: 1;\n &#9 transform: scale(1);\n &#9 transition: all 0.5s ease-in-out;\n &#9 @starting-style {\n &#9 opacity: 0;\n &#9 transform: scale(0.8;\n}"
+                    },
+                    {
+                        "language": "css",
+                        "code": "input textarea {\n &#9 field-sizing: content; \n}"
+                    },
+                    {
+                        "language": "css",
+                        "code": "select::picker(select) {\n &#9 appearance: base-select; \n }"
+                    }
+                ],
+                "websites":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "Browser en support detection",
+                "speaker": "Peter Paul Koch",
+                "date": "19-02-2026",
+                "infos": [
+                    {
+                        "title": "Browser en support detection",
+                        "content": "Kies de minst krachtige taal: HTML > CSS > JavaScript. JS is krachtig maar breekbaar."
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "appearance: none",
+                        "note": "Verwijdert standaard styling zodat je zelf kan stylen."
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "css",
+                        "code": "#my-target:target {\n outline: 10px solid deeppink;\n transition: 1s ease-in-out outline; \n}"
+                    }
+                ],
+                "websites":[
+                    {
+                        "websiteLink" : "9elements.com",
+                        "websiteInfo" : "Made UX for football club in germany, Oecd, R26.rurh, Ernst-co.com"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "9Elements & Web Design Evolution",
+                "speaker": "Nils Binder",
+                "date": "04-03-2026",
+                "infos": [
+                    {
+                        "title": "9Elements Agency",
+                        "content": "Een bureau dat Communication Design, Web Development en Product Development combineert. Ze hebben o.a. de UX voor een Duitse voetbalclub en de OECD website ontwikkeld."
+                    },
+                    {
+                        "title": "Inspiratiebronnen",
+                        "content": "Nils noemt diverse experts: Sanne (tinkerer), Jhey Tompkins (creative coding), Sophie Koonin (personal websites), Stephanie Eckles (components) en Manuel Matuzovic (structuur)."
+                    },
+                    {
+                        "title": "Design Evolutie",
+                        "content": "Van Photoshop naar Figma. In 2016 zagen te veel websites er hetzelfde uit, wat mede leidde tot de creatie van Figma. Tegenwoordig verschuift de focus naar Tailwind en AI-integraties."
+                    },
+                    {
+                        "title": "Nieuwe Technieken",
+                        "content": "Moderne CSS biedt krachtige tools zoals View-transitions voor vloeiende overgangen tussen pagina's en de 'fr' unit voor flexibele grids."
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "animation-timing-function: steps()",
+                        "note": "Gebruik 'steps(31, end)' voor een stop-motion effect; dit verdeelt de animatie in specifieke stapjes in plaats van een vloeiende beweging."
+                    },
+                    {
+                        "selector": "mix-blend-mode: difference",
+                        "note": "Hiermee creëer je unieke kleureffecten door de interactie tussen de kleuren van een element en de achtergrond te berekenen."
+                    },
+                    {
+                        "selector": "position: sticky",
+                        "note": "Zorgt ervoor dat een element 'plakt' aan een zijde van het scherm binnen zijn parent container tijdens het scrollen."
+                    },
+                    {
+                        "selector": "fr unit",
+                        "note": "Staat voor 'fractional unit' en vult automatisch de resterende beschikbare ruimte in een CSS Grid layout."
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "css",
+                        "code": ".stop-motion-sprite {\n  animation: play-animation 3s steps(31, end) infinite;\n}"
+                    },
+                    {
+                        "language": "css",
+                        "code": ".header-sticky {\n  position: sticky;\n  top: 0;\n  mix-blend-mode: difference;\n}"
+                    },
+                    {
+                        "language": "css",
+                        "code": ".grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  gap: 1rem;\n}"
+                    }
+                ],
+                "websites":[
+                    {
+                        "websiteLink" : "9elements.com",
+                        "websiteInfo" : "Made UX for football club in germany, Oecd, R26.rurh, Ernst-co.com"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "Formulieren",
+                "speaker": "Robbert Boersma",
+                "date": "12-03-2026",
+                "infos": [
+                    {
+                        "title": "Disciplines",
+                        "content": "Communication Design, Web development, Product development -> all together"
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "Flexbox",
+                        "note": "Flex direction, Flex wrap, Justify content, Align items, Gap, Padding"
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "css",
+                        "code": "animation: stop-motion 3s steps(31, end) infinite"
+                    }
+                ],
+                "websites":[
+                    {
+                        "websiteLink" : "9elements.com",
+                        "websiteInfo" : "Made UX for football club in germany, Oecd, R26.rurh, Ernst-co.com"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "Alternative Digital Infrastructure",
+                "speaker": "Rosa",
+                "date": "02-04-2026",
+                "infos": [
+                    {
+                        "title": "Wat is een hacker?",
+                        "content": "Een hacker is iemand die technisch vaardig is en op niet-standaard manieren doelen bereikt, vaak door systemen te gebruiken op manieren waarvoor ze niet bedoeld zijn."
+                    },
+                    {
+                        "title": "DIY & DIWO",
+                        "content": "Doe het zelf, maar niet alleen (Do It With Others). Door zelf te bouwen ontdek je je eigen kunnen en vergroot je de controle over je eigen digitale omgeving."
+                    },
+                    {
+                        "title": "De Problematiek van Afhankelijkheid",
+                        "content": "Planned Obsolescence en de dominantie van (Amerikaanse) Big Tech maken ons afhankelijk. Dit geldt voor consumenten, producenten en zelfs de overheid, die vaak weinig invloed hebben op de gebruikte infrastructuur."
+                    },
+                    {
+                        "title": "Onafhankelijke Alternatieven",
+                        "content": "Het kan anders door te kiezen voor (oudere) onafhankelijke systemen, Static Site Generators zoals 11ty, en zelf-gehoste diensten via YunoHost."
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "Static Site Generators",
+                        "note": "Gereedschappen zoals 11ty hebben een minimale impact op de server en zorgen voor zeer leesbare code."
+                    },
+                    {
+                        "selector": "Materialiteit",
+                        "note": "De keuze voor software en frameworks heeft directe impact op de hardware-eisen; oudere servers vragen om efficiënte keuzes in HTML, CSS en JS."
+                    },
+                    {
+                        "selector": "Self-hosting tools",
+                        "note": "Gebruik YunoHost voor serverbeheer, Forgejo voor Git, en Icecast2 voor het streamen van je eigen radio."
+                    },
+                    {
+                        "selector": "Waarom Markdown?",
+                        "note": "Indien alle complexe systemen falen, blijft de content in Markdown altijd leesbaar als platte tekst."
+                    },
+                    {
+                        "selector": "Self-hosting opties:",
+                        "note": "\n- Git: Gitea / Forgejo\n- Messaging: Zulip / Libera Chat\n- Radio: Icecast2"
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "Geen",
+                        "code": "[Geen]"
+                    }
+                ],
+                "websites":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "Accessibility",
+                "speaker": "Johann Huijkman",
+                "date": "09-04-2026",
+                "infos": [
+                    {
+                        "title": "De Essentie van Toegankelijkheid",
+                        "content": "Je gaat het pas zien als je het doorhebt, en je hoort het pas als je luistert. Je kunt niets echt toegankelijk maken zonder de doelgroep zelf erbij te betrekken."
+                    },
+                    {
+                        "title": "POUR Principes",
+                        "content": "Toegankelijkheid rust op vier zuilen: Perceivable (waarneembaar), Operable (bedienbaar), Understandable (begrijpelijk) en Robust (robuust)."
+                    },
+                    {
+                        "title": "WCAG 2.2 & Screenreaders",
+                        "content": "Hoewel WCAG 2.2 focus heeft op visuele beperkingen, is het niet de enige graadmeter. Gebruik een correcte kopstructuur (H1-H6) en alt-teksten zodat screenreader-gebruikers efficiënt kunnen navigeren."
+                    },
+                    {
+                        "title": "Gebruikerservaringen",
+                        "content": "Martijn (slechtziend) heeft behoefte aan schaalbaarheid en contrast. Naduah (motoriek/prikkels) vraagt om een rustige lay-out en aanpasbare tijdslimieten. Guido (autisme) heeft baat bij voorspelbaarheid en het filteren van prikkels zoals luidruchtige advertenties."
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "img[alt]",
+                        "note": "Elke afbeelding moet een alt-attribuut hebben; zonder alt-tekst leest een screenreader de bestandsnaam voor."
+                    },
+                    {
+                        "selector": ":focus-visible",
+                        "note": "Zorg voor duidelijke visuele indicatoren zoals een focusrand voor mensen die navigeren met het toetsenbord."
+                    },
+                    {
+                        "selector": "prefers-color-scheme",
+                        "note": "Implementeer dark/light mode om gebruikers met migraine of visuele overprikkeling te ondersteunen."
+                    },
+                    {
+                        "selector": "Layout stabiliteit",
+                        "note": "Voorkom dat elementen verspringen bij het inzoomen; dit veroorzaakt duizeligheid bij gebruikers met een visuele beperking."
+                    },
+                    {
+                        "selector": "3-stappen proces voor dev",
+                        "note": "\n1. Ervaar (test zelf)\n2. Laat ervaren (test met de doelgroep)\n3. Pas aan (verbeter)\n4. Herhaal"
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "Geen",
+                        "code": "[Geen]"
+                    }
+                ],
+                "websites":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
+                    }
+                ]
+            }
+        ],
+        "Sprint 0": [
+            {
+                "eventTitle": "Week 1",
+                "speaker": "Diego Ramon",
+                "date": "09-04-2026",
+                "infos": [
+                    {
+                        "title": "Kernprincipe",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf."
+                    },
+                    {
+                        "title": "POUR Principes",
+                        "content": "- Perceivable, - Operable, - Understandable, - Robust"
+                    },
+                    {
+                        "title": "WCAG Opmerking",
+                        "content": "Web Content Accessibility Guidelines (WCAG) 2.2 heeft een Enige focus op visuele beperkingen. Nog steeds handig om te gebruiken, maar niet het enige wat je moet gebruiken als je iets toegankelijk wilt maken."
+                    },
+                    {
+                        "title": "Screen Reader & Navigatie",
+                        "content": "Elke afbeelding moet een alt atribuut hebben, anders leest hij de image zelf voor. Van kop naar kop springen zodat iemand sneller kan navigeren inplaats van elk element af te gaan en voor te lezen. H1-h8 is heel belangrijk voor een screen reader. Cookies gelijk boven aan zodat je die gelijk weg kan klikken."
+                    },
+                    {
+                        "title": "User Test: Martijn (Slechtziend)",
+                        "content": "Websites die verspringen zijn heel vervelend. Bij inzoomen werken ze niet mee waardoor iemand snel duizelig kan worden. Nodig: Schaalbaarheid, Contrast, Gerelateerde informatie bij elkaar, Visuele indicatoren zoals een focusrand."
+                    },
+                    {
+                        "title": "User Test: Naduah (Motoriek & Prikkelbaar)",
+                        "content": "Velle kleuren triggered migraine. Veel info kost teveel concentratie. Last van handen bij lang zoeken. Nodig: rustige lay-out en vormgeving, gegevens kunnen bewaren, aanpasbare tijdslimiet, dark/light mode."
+                    },
+                    {
+                        "title": "User Test: Guido (Autisme Spectrum)",
+                        "content": "Visuele en audio prikkels komen extra hard binnen (geen filter). Advertenties zijn overlast. Wil meteen weten wat in te vullen. Nodig: Rustige layout en vormgeving, Duidelijke instructies en meldingen, Voorspelbaarheid."
+                    },
+                    {
+                        "title": "Workflow",
+                        "content": "1. Ervaar, 2. Laat ervaren, 3. Pas aan, Herhaal"
+                    }
+                ],
+                "questions": [
+                    {
+                        "question": "Hoe optimaliseer je hiervoor??",
+                        "points": [
+                            "Wat maakt het voor hem/haar moeilijk?",
+                            "Wat heeft hij/zij nodig"
+                        ]
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            }
+        ],
+        "Hackaton": [
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            }
+        ],
+        "Weekly Geek": [
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            }
+        ],
+        "Andere vakken": [
+            {
+                "eventTitle": "BT",
+                "speaker": "Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "CSS",
+                "speaker": "Sanne",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "API",
+                "speaker": "Cyd en Jad",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "HCD",
+                "speaker": "Leonie en Vasilis",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            }
+        ],
+        "Meesterproef": [
+            {
+                "eventTitle": "Meesterproef",
+                "speaker": "Diego Ramon",
+                "date": "16/02/2026",
+                "infos": [
+                    {
+                        "title": "",
+                        "content": ""
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "[Geen]",
+                        "code": "[Geen]"
+                    }
+                ]
+            }
+        ]
+    }
 }

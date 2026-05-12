@@ -3,11 +3,12 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { Lensflare, LensflareElement } from 'three/addons/objects/Lensflare.js';
+import { NebulaBackground } from './nebula.js';
 
 // MARK: Const and lets
 const scene = new THREE.Scene();
 const loader = new GLTFLoader();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01, 1000);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01, 15000);
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
 const moonPivot = new THREE.Object3D();
@@ -15,8 +16,8 @@ const moonPivot = new THREE.Object3D();
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.25);
 const sunLight = new THREE.DirectionalLight(0xffffff, 8);
 const textureLoader = new THREE.TextureLoader();
-const textureFlare0 = textureLoader.load('assets/img/lensflare0.png');
-const textureFlare1 = textureLoader.load('assets/img/lensflare1.png');
+const textureFlare0 = textureLoader.load('./assets/img/lensflare0.png');
+const textureFlare1 = textureLoader.load('./assets/img/lensflare1.png');
 
 const lensflare = new Lensflare();
 
@@ -35,12 +36,13 @@ let moonModel;
 let satelliteModel;
 let targetDistance = 250;
 let focusedSatellite = null;
+let nebula;
 
 // MARK: Loaders
-loader.load('/assets/models/earth.glb', function (gltf) {
+loader.load('./assets/models/earth.glb', function (gltf) {
     earthModel = gltf.scene;
     
-    sunLight.position.set(500, 100, 500);
+    sunLight.position.set(10000, 0, 0);
     camera.position.set(0, 100, 250);
 
     scene.add(sunLight, ambientLight, moonPivot, earthModel);
@@ -55,10 +57,15 @@ loader.load('/assets/models/earth.glb', function (gltf) {
     lensflare.addElement(new LensflareElement(textureFlare1, 120, 0.9, sunLight.color, THREE.AdditiveBlending));
     lensflare.addElement(new LensflareElement(textureFlare1, 70, 1, sunLight.color, THREE.AdditiveBlending));
 
+    nebula = new NebulaBackground(scene, {
+        minDistance: 700,
+        starCount: 10000
+    });
+
     sunLight.add(lensflare);
 });
 
-loader.load('/assets/models/satellite.glb', 
+loader.load('./assets/models/satellite.glb', 
     function (gltf) {
         satelliteModel = gltf.scene;
         satelliteModel.scale.set(0.15, 0.15, 0.15); 
@@ -72,10 +79,10 @@ loader.load('/assets/models/satellite.glb',
     }
 );
 
-loader.load('/assets/models/moon.glb', function (gltf) {
+loader.load('./assets/models/moon.glb', function (gltf) {
     moonModel = gltf.scene;
     moonModel.position.set(600, 0, 0); 
-    moonModel.scale.set(15, 15, 15);
+    moonModel.scale.set(16, 16, 16);
     
     moonPivot.add(moonModel);
 });
@@ -101,9 +108,10 @@ export function createSatelliteInstance() {
 function animate() {
     requestAnimationFrame(animate);
 
+    if (nebula) nebula.update();
     if (earthModel) earthModel.rotation.y += 0.0005;
     if (moonPivot) moonPivot.rotation.y += 0.001;
-    if (moonModel) moonModel.rotation.y -= 0.001;
+    if (moonModel) moonModel.rotation.y += 0.001;
 
     controls.enableZoom = false;
     controls.enableDamping = true;
@@ -120,7 +128,8 @@ function animate() {
         const satPosition = new THREE.Vector3();
         satModel.getWorldPosition(satPosition);
 
-        const cameraOffset = satPosition.clone().normalize().multiplyScalar(3); 
+        const offsetDistance = (focusedSatellite === moonPivot) ? 50 : 3; 
+        const cameraOffset = satPosition.clone().normalize().multiplyScalar(offsetDistance);
         const newCameraPos = satPosition.clone().add(cameraOffset);
 
         const sideOffset = new THREE.Vector3().crossVectors(cameraOffset, new THREE.Vector3(0, 1, 0)).normalize().multiplyScalar(-1.5);
@@ -152,8 +161,14 @@ window.focusOnSatellite = (index) => {
     if (index === -1) {
         focusedSatellite = null;
         targetDistance = 250;
-    } else if (satellitePivots[index]) {
-        focusedSatellite = satellitePivots[index];
+    } else {
+        const item = flatData[index];
+
+        if (item && item.category === "Meesterproef") {
+            focusedSatellite = moonPivot;
+        } else if (satellitePivots[index]) {
+            focusedSatellite = satellitePivots[index];
+        }
     }
 };
 
@@ -172,6 +187,4 @@ window.addEventListener('wheel', (event) => {
     const delta = Math.sign(event.deltaY); 
     targetDistance += delta * 15;
     targetDistance = Math.max(minDistance, Math.min(maxDistance, targetDistance));
-    
-    console.log("Nieuwe afstand doel:", targetDistance); // Check je console (F12)
 }, { passive: true });
