@@ -36,6 +36,7 @@ let moonModel;
 let satelliteModel;
 let targetDistance = 250;
 let focusedSatellite = null;
+let focusedEarth = false;
 let nebula;
 
 // MARK: Loaders
@@ -139,6 +140,25 @@ function animate() {
         camera.lookAt(0, 0, 0);
 
         controls.enabled = false; 
+    } else if (focusedEarth) {
+        // --- NIEUW: Focus op Aarde met Offset ---
+        controls.enabled = false; 
+
+        // 1. Bepaal de positie (bijv. 180 units van de aarde af)
+        const targetPos = new THREE.Vector3(-150, 0, 120); 
+        
+        // 2. Pas een offset toe op het 'kijkpunt' (target)
+        // Door de camera naar links te schuiven en naar rechts te kijken, 
+        // komt de aarde rechts in beeld te staan.
+        const lookAtTarget = new THREE.Vector3(260, 0, 0); // De aarde 'kijkt' nu iets opzij
+
+        camera.position.lerp(targetPos, 0.05);
+        
+        // We gebruiken een tijdelijke vector om de lookAt soepel te laten verlopen
+        const currentLookAt = new THREE.Vector3();
+        camera.getWorldDirection(currentLookAt);
+        camera.lookAt(lookAtTarget);
+
     } else {
         controls.enabled = true;
         controls.update(); 
@@ -160,10 +180,14 @@ window.createSatelliteInstance = createSatelliteInstance;
 window.focusOnSatellite = (index) => {
     if (index === -1) {
         focusedSatellite = null;
+        focusedEarth = false;
         targetDistance = 250;
+    } else if (index === -2) {
+        focusedSatellite = null;
+        focusedEarth = true;
     } else {
+        focusedEarth = false;
         const item = flatData[index];
-
         if (item && item.category === "Meesterproef") {
             focusedSatellite = moonPivot;
         } else if (satellitePivots[index]) {

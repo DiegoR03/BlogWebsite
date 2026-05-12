@@ -36,6 +36,10 @@ window.filterByEvent = (selectedEvent) => {
     if (!selectorContainer) return;
     selectorContainer.innerHTML = '';
 
+    if (typeof window.focusOnSatellite === 'function') {
+        window.focusOnSatellite(-2);
+    }
+
     const backBtn = `
         <li>
             <button onclick="resetFocus()">
