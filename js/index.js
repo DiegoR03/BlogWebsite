@@ -4,7 +4,7 @@ let audio = document.getElementById("backgroundMusic");
 
 async function loadInfo() {
     try {
-        const response = await fetch('assets/api/info.json');
+        const response = await fetch('./assets/api/info.json');
         const data = await response.json();
         jsonData = data;
 
