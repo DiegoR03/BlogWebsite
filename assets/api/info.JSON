@@ -80,26 +80,54 @@
                 "date": "19-02-2026",
                 "infos": [
                     {
-                        "title": "Browser en support detection",
-                        "content": "Kies de minst krachtige taal: HTML > CSS > JavaScript. JS is krachtig maar breekbaar."
+                    "title": "Browser Componenten",
+                    "content": "Een browser is een 'Web' platform bestaande uit een HTML, CSS en Javascript engine. Het DOM (Document Object Model) fungeert als de brug die HTML documenten omzet in data voor JS. Hiernaast staat het AOM (Accessibility Object Model) voor toegankelijkheid. De JS engine voert de logica uit, terwijl de Interface de interactie tussen gebruiker en machine verzorgt."
+                    },
+                    {
+                    "title": "Browser Model & Pipeline",
+                    "content": "De workflow van een browser: Request handling haalt data via Cache of Internet -> Parsers (HTML, JS, CSS) verwerken de broncode -> DOM wordt gevormd -> Style engine & Media bepalen de Layout -> Paint (kleur) -> Compositor stuurt het naar het Apparaat."
+                    },
+                    {
+                    "title": "Korte Geschiedenis van de Browser",
+                    "content": "De eerste browser was 'WorldWideWeb' (Cern, Tim Berners-Lee), herbouwd in 2019. Belangrijke mijlpalen: Mosaic (1993) introduceerde plaatjes; Netscape (1994) was de eerste commerciële browser; Internet Explorer (1995) werd dominant door gratis distributie; Opera (1995) blonk uit in CSS. Later volgden Safari (2003, voortgekomen uit Konqueror/Webkit), Firefox (2004, opvolger Netscape), Chrome (2008, splitste later af van Webkit naar Blink) en recente projecten zoals Flow en Ladybird."
+                    },
+                    {
+                    "title": "Browser als Hostile Platform",
+                    "content": "Douglas Crockford noemt browsers 'the most hostile development platforms in the world'. Dit komt door de noodzaak voor Backwards Compatibility: alles wat een browser ooit heeft ondersteund, moet hij altijd blijven ondersteunen om het web niet te breken."
+                    },
+                    {
+                    "title": "Rendering & Blocking",
+                    "content": "De rendering engine (zoals Blink) bouwt de trees maar bevat geen interface of JS engine. CSS is 'rendering blocking'. JS is dat ook, tenzij 'async' of 'defer' wordt gebruikt. Het advies is: eerst HTML, dan CSS voor de layout, en pas daarna zware JS."
                     }
                 ],
                 "codeTips": [
                     {
-                        "selector": "appearance: none",
-                        "note": "Verwijdert standaard styling zodat je zelf kan stylen."
+                    "selector": "defer",
+                    "note": "Script uitvoeren na parsing: 'do it later'."
+                    },
+                    {
+                    "selector": "async",
+                    "note": "Script laden zonder de parser te blokkeren: 'don't care when, just not now'."
+                    },
+                    {
+                    "selector": "[Form object].elements",
+                    "note": "Geeft alle formulier-onderdelen terug op volgorde."
+                    },
+                    {
+                    "selector": "<frameset>",
+                    "note": "Oude techniek die elke keer een eigen pagina inlaadt."
                     }
                 ],
                 "codeExamples": [
                     {
-                        "language": "css",
-                        "code": "#my-target:target {\n outline: 10px solid deeppink;\n transition: 1s ease-in-out outline; \n}"
+                    "language": "html",
+                    "code": "<body bgcolor=\"abdaca\">"
                     }
                 ],
                 "websites":[
                     {
-                        "websiteLink" : "9elements.com",
-                        "websiteInfo" : "Made UX for football club in germany, Oecd, R26.rurh, Ernst-co.com"
+                        "websiteLink" : "https://worldwideweb.cern.ch/",
+                        "websiteInfo" : "World Wide Web (Cern), Herbouwde versie van de eerste browser uit 2019."
                     }
                 ]
             },
@@ -165,31 +193,71 @@
                 ]
             },
             {
-                "eventTitle": "Formulieren",
-                "speaker": "Robbert Boersma",
+                "eventTitle": "Ff formulieren maken - NL Design system richtlijnen",
+                "speaker": "Robbert Broersma",
                 "date": "12-03-2026",
                 "infos": [
                     {
-                        "title": "Disciplines",
-                        "content": "Communication Design, Web development, Product development -> all together"
+                    "title": "NL Design System & Frameless",
+                    "content": "Het NL Design System wordt ondersteund door een grote community (o.a. Frameless met 200 designers en 200 developers). De focus ligt op toegankelijkheid en gebruiksvriendelijkheid volgens strikte richtlijnen."
+                    },
+                    {
+                    "title": "Opbouw & Flow van Formulieren",
+                    "content": "Een goed formulier heeft een logische volgorde, toont voortgang (bijv. [2 van de 4]) en biedt een samenvatting voor verzending. Vraag niet naar onnodige informatie en geef duidelijk aan wat optioneel is. Zorg voor consistente navigatie en bied hulp/contactmogelijkheden op meerdere plekken aan."
+                    },
+                    {
+                    "title": "Toegankelijkheid & Interactie",
+                    "content": "Componenten moeten een klikoppervlak van minimaal 44x44 pixels hebben. Kleurcontrast is essentieel voor zowel tekst als randen. Belangrijk: geef fouten nooit alleen met kleur aan. Alles moet volledig bedienbaar zijn via het toetsenbord met een duidelijke focus-indicator."
+                    },
+                    {
+                    "title": "Labels & Beschrijvingen",
+                    "content": "Elk veld moet een zichtbaar label hebben. Extra uitleg of foutmeldingen moeten via 'aria-describedby' gekoppeld worden aan het inputveld. Voor checkbox- of radiogroups koppel je de beschrijving aan het fieldset."
+                    },
+                    {
+                    "title": "Validatie & Bevestiging",
+                    "content": "Regels (zoals tekens of lengte) moeten vooraf duidelijk zijn. Gebruik geen onnodige restricties (zoals verplichte spaties). Toon na afloop een duidelijke samenvatting en geef de mogelijkheid om gegevens te wijzigen of de inzending ongedaan te maken."
+                    },
+                    {
+                    "title": "Screenreader Ondersteuning",
+                    "content": "Labels, verplichte velden en voortgang moeten hoorbaar zijn. Feedback (zoals '42 van de 100 tekens') of positieve statusberichten na het versturen moeten automatisch worden voorgelezen (live regions) zonder dat de gebruiker extra hoeft te navigeren."
                     }
                 ],
                 "codeTips": [
                     {
-                        "selector": "Flexbox",
-                        "note": "Flex direction, Flex wrap, Justify content, Align items, Gap, Padding"
+                    "selector": "autofill / autocomplete",
+                    "note": "Maak gebruik van bekende browser-informatie om invullen makkelijker te maken, zeker voor contactgegevens."
+                    },
+                    {
+                    "selector": "aria-describedby",
+                    "note": "Koppelt extra tekstuele hulp, feedback of foutmeldingen aan een specifiek invoerveld voor screenreaders."
+                    },
+                    {
+                    "selector": "ctrl+c / ctrl+v",
+                    "note": "Knippen en plakken moet overal toegestaan zijn; blokkeer dit niet."
+                    },
+                    {
+                    "selector": "tab volgorde",
+                    "note": "Zorg dat de tab-volgorde logisch is en na een volgende/vorige stap weer bovenaan bij de samenvatting of de nieuwe sectie begint."
                     }
                 ],
                 "codeExamples": [
                     {
-                        "language": "css",
-                        "code": "animation: stop-motion 3s steps(31, end) infinite"
+                    "language": "html",
+                    "code": "<label for=\"input-id\">Label tekst</label>\n<input id=\"input-id\" type=\"text\">"
+                    },
+                    {
+                    "language": "html",
+                    "code": "<!-- Voorkomt vertaling van gebruikersinvoer op de controlepagina -->\n<bdi translate=\"no\">Ingevoerde waarde</bdi>"
+                    },
+                    {
+                    "language": "html",
+                    "code": "<!-- Alternatieve labels (moeten nog steeds zichtbare tekst ondersteunen) -->\n<input aria-label=\"Zoeken\" title=\"Zoeken\" type=\"search\">"
                     }
                 ],
                 "websites":[
                     {
-                        "websiteLink" : "9elements.com",
-                        "websiteInfo" : "Made UX for football club in germany, Oecd, R26.rurh, Ernst-co.com"
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
@@ -308,183 +376,224 @@
                 ]
             }
         ],
-        "Sprint 0": [
+        "Meesterschap": [
             {
-                "eventTitle": "Week 1",
-                "speaker": "Diego Ramon",
+                "eventTitle": "Sprint 0",
+                "programmer": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Kernprincipe",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf."
-                    },
-                    {
-                        "title": "POUR Principes",
-                        "content": "- Perceivable, - Operable, - Understandable, - Robust"
-                    },
-                    {
-                        "title": "WCAG Opmerking",
-                        "content": "Web Content Accessibility Guidelines (WCAG) 2.2 heeft een Enige focus op visuele beperkingen. Nog steeds handig om te gebruiken, maar niet het enige wat je moet gebruiken als je iets toegankelijk wilt maken."
-                    },
-                    {
-                        "title": "Screen Reader & Navigatie",
-                        "content": "Elke afbeelding moet een alt atribuut hebben, anders leest hij de image zelf voor. Van kop naar kop springen zodat iemand sneller kan navigeren inplaats van elk element af te gaan en voor te lezen. H1-h8 is heel belangrijk voor een screen reader. Cookies gelijk boven aan zodat je die gelijk weg kan klikken."
-                    },
-                    {
-                        "title": "User Test: Martijn (Slechtziend)",
-                        "content": "Websites die verspringen zijn heel vervelend. Bij inzoomen werken ze niet mee waardoor iemand snel duizelig kan worden. Nodig: Schaalbaarheid, Contrast, Gerelateerde informatie bij elkaar, Visuele indicatoren zoals een focusrand."
-                    },
-                    {
-                        "title": "User Test: Naduah (Motoriek & Prikkelbaar)",
-                        "content": "Velle kleuren triggered migraine. Veel info kost teveel concentratie. Last van handen bij lang zoeken. Nodig: rustige lay-out en vormgeving, gegevens kunnen bewaren, aanpasbare tijdslimiet, dark/light mode."
-                    },
-                    {
-                        "title": "User Test: Guido (Autisme Spectrum)",
-                        "content": "Visuele en audio prikkels komen extra hard binnen (geen filter). Advertenties zijn overlast. Wil meteen weten wat in te vullen. Nodig: Rustige layout en vormgeving, Duidelijke instructies en meldingen, Voorspelbaarheid."
-                    },
-                    {
-                        "title": "Workflow",
-                        "content": "1. Ervaar, 2. Laat ervaren, 3. Pas aan, Herhaal"
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "questions": [
+                "leerdoelen":[
                     {
-                        "question": "Hoe optimaliseer je hiervoor??",
-                        "points": [
-                            "Wat maakt het voor hem/haar moeilijk?",
-                            "Wat heeft hij/zij nodig"
-                        ]
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
                     }
                 ],
-                "codeExamples": [
+                "website":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
-            }
-        ],
-        "Hackaton": [
+            },
             {
-                "eventTitle": "BT",
-                "speaker": "Vasilis",
-                "date": "16/02/2026",
+                "eventTitle": "Hackaton",
+                "programmer": "Diego Ramon",
+                "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "codeExamples": [
+                "leerdoelen":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
+                    }
+                ]
+            },
+            {
+                "eventTitle": "Meesterschap Blog",
+                "programmer": "Diego Ramon",
+                "date": "09-04-2026",
+                "infos": [
+                    {
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    }
+                ],
+                "leerdoelen":[
+                    {
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             }
         ],
         "Weekly Geek": [
             {
-                "eventTitle": "BT",
-                "speaker": "Vasilis",
+                "eventTitle": "Its hard to justify Tahoe Icons",
+                "speaker": "Niki",
                 "date": "16/02/2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "Onderwerp": "",
+                        "Uitleg": ""
                     }
                 ],
-                "codeExamples": [
+                "geleerd": [
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "Titel": "Wat heb ik geleerd",
+                        "Uitleg": ""
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
             {
-                "eventTitle": "BT",
+                "eventTitle": "UX/HTML opdracht",
                 "speaker": "Vasilis",
                 "date": "16/02/2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "Onderwerp": "",
+                        "Uitleg": ""
                     }
                 ],
-                "codeExamples": [
+                "geleerd": [
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "Titel": "Wat heb ik geleerd",
+                        "Uitleg": ""
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
             {
-                "eventTitle": "BT",
-                "speaker": "Vasilis",
+                "eventTitle": "What happened to text inputs",
+                "speaker": "Web-bed briefs/heydon",
                 "date": "16/02/2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "Onderwerp": "",
+                        "Uitleg": ""
                     }
                 ],
-                "codeExamples": [
+                "geleerd": [
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "Titel": "Wat heb ik geleerd",
+                        "Uitleg": ""
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
             {
-                "eventTitle": "BT",
+                "eventTitle": "Introductie over Exclusie Design - Flipping Things",
                 "speaker": "Vasilis",
                 "date": "16/02/2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "Onderwerp": "",
+                        "Uitleg": ""
                     }
                 ],
-                "codeExamples": [
+                "geleerd": [
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "Titel": "Wat heb ik geleerd",
+                        "Uitleg": ""
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
             {
-                "eventTitle": "BT",
-                "speaker": "Vasilis",
+                "eventTitle": "Accessibility and the Agentic Web",
+                "speaker": "Léonie Watson",
                 "date": "16/02/2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "Onderwerp": "",
+                        "Uitleg": ""
                     }
                 ],
-                "codeExamples": [
+                "geleerd": [
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "Titel": "Wat heb ik geleerd",
+                        "Uitleg": ""
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             }
+
         ],
-        "Andere vakken": [
+        "Vakken": [
             {
                 "eventTitle": "BT",
-                "speaker": "Vasilis",
-                "date": "16/02/2026",
+                "programmer": "Diego Ramon",
+                "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "codeExamples": [
+                "leerdoelen":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
@@ -507,35 +616,51 @@
             },
             {
                 "eventTitle": "API",
-                "speaker": "Cyd en Jad",
-                "date": "16/02/2026",
+                "programmer": "Diego Ramon",
+                "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "codeExamples": [
+                "leerdoelen":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
             {
                 "eventTitle": "HCD",
-                "speaker": "Leonie en Vasilis",
-                "date": "16/02/2026",
+                "programmer": "Diego Ramon",
+                "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "codeExamples": [
+                "leerdoelen":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             }
@@ -543,18 +668,26 @@
         "Meesterproef": [
             {
                 "eventTitle": "Meesterproef",
-                "speaker": "Diego Ramon",
-                "date": "16/02/2026",
+                "programmer": "Diego Ramon",
+                "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "title": "Uitleg",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "codeExamples": [
+                "leerdoelen":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "leerdoel_1" : "Geen",
+                        "leerdoel_2" : "Geen",
+                        "leerdoel_3" : "Geen"
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             }

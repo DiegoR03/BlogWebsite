@@ -51,7 +51,7 @@ class ShootingStar {
         );
 
         this.mesh.lookAt(target);
-        this.speed = 10 + Math.random() * 30;
+        this.speed = 10 + Math.random() * 10;
     }
 
     update() {
@@ -71,6 +71,7 @@ class ShootingStar {
     }
 }
 
+// Met behulp van Gemini mijn 2D nebula code omgezet naar 3D code
 export class NebulaBackground {
     constructor(scene, config = {}) {
         this.scene = scene;

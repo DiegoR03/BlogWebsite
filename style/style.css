@@ -44,7 +44,7 @@ nav {
         gap: 2rem;
         justify-content: center;
 
-        li button{
+        li button {
             padding: 1rem;
             background-color: transparent;
             border: none;
@@ -53,30 +53,54 @@ nav {
             text-transform: uppercase;
             font-size: 1.2rem;
 
-            &:hover{
+            &:hover {
                 color: #ffae00;
                 transition: color 0.2s;
 
-                &::after{
+                &::after {
                     width: 100%;
                 }
             }
 
-            &:after{
+            &:after {
                 content: '';
                 display: block;
                 width: 0;
                 height: 2px;
-                background:#ffae00;
-                transition: width 0.3s;;
+                background: #ffae00;
+                transition: width 0.3s;
+                ;
                 margin-top: 10px;
             }
 
         }
     }
-
-    
 }
+
+pre {
+    margin: 0;
+    overflow-x: auto;
+}
+
+code {
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.5;
+}
+
+/* Scrollbar */
+/* Bron: https://youtu.be/NSxGZ7fC5AA?si=QDXasDdB0mPAIybX */
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(240deg, #70ffd3 0.000%, #72ffd2 4.000%, #74fcd1 8.000%, #76f7d0 12.000%, #78f1d0 16.000%, #79ecd1 20.000%, #7be6d2 24.000%, #7ce0d4 28.000%, #7edad6 32.000%, #7fd3d9 36.000%, #80ccdd 40.000%, #81c6e1 44.000%, #82bfe5 48.000%, #83b7ea 52.000%, #83b0ee 56.000%, #84a9f3 60.000%, #84a2f8 64.000%, #849afe 68.000%, #8493ff 72.000%, #848bff 76.000%, #8484ff 80.000%, #847cff 84.000%, #8375ff 88.000%, #826eff 92.000%, #8266ff 96.000%, #815fff 100.000%);
+    border-radius: 5px;
+    height: 10px;
+}
+
 
 #selector-container,
 #details-container {
@@ -87,16 +111,17 @@ nav {
     background-color: #0000006e;
     animation: easeIn 0.3s ease-out;
     z-index: 3;
+    overflow: auto;
 
     ul {
-        padding:0;
+        padding: 1rem;
         padding-bottom: 2rem;
         list-style: none;
 
         li {
             background-color: #5a5a5a;
             margin-top: 1rem;
-            padding: 1rem;
+            padding: 0;
             border-radius: 5px;
 
             button {
@@ -115,6 +140,45 @@ nav {
 #selector-container {
     width: 20vw;
     max-width: 20rem;
+
+    ul {
+        li {
+            border: 1px #3f3f3f  solid;
+            background: transparent;
+            text-align: center;
+
+            &:first-of-type {
+                background-color: #363636;
+            }
+
+            button {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &:hover {
+                color: #ffae00;
+                transition: color 0.2s;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #ffae00;
+                transition: width 0.3s;
+                ;
+                margin-top: 10px;
+            }
+        }
+
+    }
 }
 
 #details-container {
@@ -126,7 +190,7 @@ nav {
     width: 45vw;
     max-width: 60rem;
 
-    button{
+    button {
         position: fixed;
         left: 0;
         top: 0;
@@ -137,12 +201,13 @@ nav {
         border-radius: 0.5rem;
         color: white;
 
-        &:hover{
+        &:hover {
             color: #ffae00;
         }
     }
 
-    h3{
+
+    h3 {
         border-top: 1px solid white;
         padding: 1rem;
     }
@@ -174,7 +239,7 @@ nav {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
-.website-block{
+.website-block {
     margin-bottom: 4rem;
     height: fit-content;
     background-color: #1e1e1e;
@@ -182,13 +247,14 @@ nav {
     line-height: 40px;
     padding: 1rem;
 
-    a{
+    a {
         color: #ffae00;
         text-align: center;
     }
 
-    p{
-        border-bottom: 0.5px solid white;;
+    p {
+        border-bottom: 0.5px solid white;
+        ;
     }
 }
 
@@ -202,19 +268,8 @@ nav {
     border-bottom: 1px solid #333;
 }
 
-pre {
-    margin: 0;
-    overflow-x: auto;
-}
-
-code {
-    white-space: pre-wrap;
-    word-break: break-all;
-    line-height: 1.5;
-}
-
-
-#selector-container, #details-container {
+#selector-container,
+#details-container {
     display: none;
 }
 
@@ -222,7 +277,8 @@ code {
     from {
         transform: var(--translation);
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
 }

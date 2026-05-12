@@ -1,31 +1,28 @@
 let jsonData = null;
-let flatData = []; 
-
-// Bron: https://www.w3schools.com/tags/av_prop_volume.asp
-let vid = document.getElementById("backgroundMusic");
-vid.volume = 0.3;
+let flatData = [];
+let audio = document.getElementById("backgroundMusic");
 
 async function loadInfo() {
     try {
-        const response = await fetch('../assets/api/info.json');
+        const response = await fetch('assets/api/info.json');
         const data = await response.json();
-        jsonData = data; 
+        jsonData = data;
 
         flatData = [];
         for (const category in data.events) {
-        data.events[category].forEach((item) => {
-            item.category = category; 
-            flatData.push(item);
+            data.events[category].forEach((item) => {
+                item.category = category;
+                flatData.push(item);
 
-            if (category !== "Meesterproef") {
-                if (typeof satelliteModel !== 'undefined' && satelliteModel !== null) {
-                    createSatelliteInstance();
-                } else {
-                    window.pendingSatellites = (window.pendingSatellites || 0) + 1;
+                if (category !== "Meesterproef") {
+                    if (typeof satelliteModel !== 'undefined' && satelliteModel !== null) {
+                        createSatelliteInstance();
+                    } else {
+                        window.pendingSatellites = (window.pendingSatellites || 0) + 1;
+                    }
                 }
-            }
-        });
-    }
+            });
+        }
     } catch (error) {
         console.error("Fout bij het laden van de JSON:", error);
     }
@@ -71,33 +68,15 @@ window.handleSatelliteClick = (index) => {
     if (!info) return;
 
     window.focusOnSatellite(index);
-    
+
     const selectorContainer = document.getElementById('selector-container');
     const detailsContainer = document.getElementById('details-container');
     const detailsContent = document.getElementById('details-content');
 
-    const infosHTML = info.infos.map(item => `
-        <div class="info-block">
-            <h4>${item.title}</h4>
-            <p>${item.content}</p>
-        </div>
-    `).join('');
-
-    const codeTipsHTML = info.codeTips ? info.codeTips.map(tip => `
-        <li><code>${tip.selector}</code>: ${tip.note}</li>
-    `).join('') : '';
-
-    const codeExamplesHTML = info.codeExamples ? info.codeExamples.map(code => `
-        <div class="code-block">
-            <span class="language-label">${code.language}</span>
-            <pre><code>${code.code}</code></pre>
-        </div>
-    `).join('') : '';
-
     const websiteLinksHTML = info.websites ? info.websites.map(website => {
-        const url = website.websiteLink.startsWith('http') 
-                    ? website.websiteLink 
-                    : `https://${website.websiteLink}`;
+        const url = website.websiteLink.startsWith('http')
+            ? website.websiteLink
+            : `https://${website.websiteLink}`;
 
         return `
             <div class="website-block">
@@ -107,30 +86,92 @@ window.handleSatelliteClick = (index) => {
         `;
     }).join('') : '';
 
-    detailsContent.innerHTML = `
-        <h2>${info.eventTitle}</h2>
-        <h3>Spreker: ${info.speaker}</h3>
-        <h3>Datum: ${info.date}</h3>
-        
-        <section class="infos-section">
-            ${infosHTML}
-        </section>
+    if (info.category === "Weekly Nerd") {
+        const infosHTML = info.infos.map(item => `
+            <div class="info-block">
+                <h4>${item.title}</h4>
+                <p>${item.content}</p>
+            </div>
+        `).join('');
 
-        ${codeTipsHTML ? `
-            <h3>Code Tips:</h3>
-            <ul>${codeTipsHTML}</ul>
-        ` : ''}
+        const codeTipsHTML = info.codeTips ? info.codeTips.map(tip => `
+            <li><code>${tip.selector}</code>: ${tip.note}</li>
+        `).join('') : '';
 
-        ${codeExamplesHTML ? `
-            <h3>Code voorbeelden:</h3>
-            ${codeExamplesHTML}
-        ` : ''}
+        const codeExamplesHTML = info.codeExamples ? info.codeExamples.map(code => `
+            <div class="code-block">
+                <span class="language-label">${code.language}</span>
+                <pre><code>${code.code}</code></pre>
+            </div>
+        `).join('') : '';
 
-        ${websiteLinksHTML ? `
-            <h3>Website Links:</h3>
-            ${websiteLinksHTML}
-        ` : ''}
-    `;
+            templateHTML = `
+            <h2>${info.eventTitle}</h2>
+            <h3>Spreker: ${info.speaker}</h3>
+            <h3>Datum: ${info.date}</h3>
+            
+            <section class="infos-section">
+                ${infosHTML}
+            </section>
+
+            ${codeTipsHTML ? `
+                <h3>Code Tips:</h3>
+                <ul>${codeTipsHTML}</ul>
+            ` : ''}
+
+            ${codeExamplesHTML ? `
+                <h3>Code voorbeelden:</h3>
+                ${codeExamplesHTML}
+            ` : ''}
+
+            ${websiteLinksHTML ? `
+                <h3>Website Links:</h3>
+                ${websiteLinksHTML}
+            ` : ''
+            }`;
+    } else if (info.category === "Meesterschap" || "Vakken" || "Meesterproef" ) {
+        const infosHTML = info.infos.map(item => `
+            <div class="info-block">
+                <h2>${item.title}</h2>
+                <p>${item.content}</p>
+                <img src=${item.image}>
+            </div>
+        `).join('');
+
+        const leerdoelen = info.leerdoelen ? info.leerdoelen.map(doel => `
+            <p>${doel.leerdoel_1}</p>
+            <p>${doel.leerdoel_2}</p>
+            <p>${doel.leerdoel_3}</p>
+        `).join('') : '';
+
+        templateHTML = `
+            <h2>${info.eventTitle}</h2>
+            <p>${info.programmer}</p>
+
+            <section class="infos-section">
+                ${infosHTML}
+            </section>
+
+            ${leerdoelen ? `
+                <h3>Leerdoelen:</h3>
+                ${leerdoelen}
+            ` : ''}
+
+            ${websiteLinksHTML ? `
+                <h3>Website Links:</h3>
+                ${websiteLinksHTML}
+            ` : ''
+            }`;
+        ;
+    } else {
+        templateHTML = `
+            <h2>${info.eventTitle}</h2>
+            <p>${info.date}</p>
+            <p>Informatie voor deze categorie volgt nog...</p>
+        `;
+    }
+
+    detailsContent.innerHTML = templateHTML;
 
     if (selectorContainer) selectorContainer.style.display = 'none';
     if (detailsContainer) detailsContainer.style.display = 'block';
@@ -141,7 +182,7 @@ window.handleMoonClick = (index) => {
     if (!info) return;
 
     window.focusOnSatellite(index);
-    
+
     const selectorContainer = document.getElementById('selector-container');
     const detailsContainer = document.getElementById('details-container');
     const detailsContent = document.getElementById('details-content');
@@ -196,5 +237,18 @@ window.resetFocus = () => {
     document.getElementById('selector-container').style.display = 'none';
     document.getElementById('details-container').style.display = 'none';
 };
+
+// Bron: https://www.w3schools.com/tags/av_prop_volume.asp
+document.addEventListener('DOMContentLoaded', () => {
+    if (audio) {
+        audio.volume = 0.3;
+    }
+});
+
+document.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+    }
+}, { once: true });
 
 loadInfo();
