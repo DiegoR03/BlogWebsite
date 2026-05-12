@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: SpaceGrotesk;
-    src: url(/assets/fonts/SpaceGrotesk.ttf) format("truetype");
+    src: url(../assets/fonts/SpaceGrotesk.ttf) format("truetype");
 }
 
 body {
