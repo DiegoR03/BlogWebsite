@@ -43,7 +43,7 @@ window.filterByEvent = (selectedEvent) => {
     const backBtn = `
         <li>
             <button onclick="resetFocus()">
-                <strong>← Terug naar alle categorieën</strong>
+                ← Terug naar alle categorieën</strong>
             </button>
         </li>
     `;
@@ -55,7 +55,7 @@ window.filterByEvent = (selectedEvent) => {
                 <li>
                     <button onclick="handleSatelliteClick(${originalIndex})">
                         <h2>${nerd.eventTitle}</h2>
-                        <p><em>${nerd.speaker} - ${nerd.date}</em></p>
+                        <p><em>${nerd.involved} - ${nerd.date}</em></p>
                     </button>    
                 </li>
             `;
@@ -111,7 +111,7 @@ window.handleSatelliteClick = (index) => {
 
             templateHTML = `
             <h2>${info.eventTitle}</h2>
-            <h3>Spreker: ${info.speaker}</h3>
+            <h3>Spreker: ${info.involved}</h3>
             <h3>Datum: ${info.date}</h3>
             
             <section class="infos-section">
@@ -133,33 +133,22 @@ window.handleSatelliteClick = (index) => {
                 ${websiteLinksHTML}
             ` : ''
             }`;
-    } else if (info.category === "Meesterschap" || "Vakken" || "Meesterproef" ) {
+    } else if (["Meesterschap", "Vakken", "Meesterproef"].includes(info.category)){
         const infosHTML = info.infos.map(item => `
             <div class="info-block">
                 <h2>${item.title}</h2>
                 <p>${item.content}</p>
-                <img src=${item.image}>
+                ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ''}
             </div>
         `).join('');
 
-        const leerdoelen = info.leerdoelen ? info.leerdoelen.map(doel => `
-            <p>${doel.leerdoel_1}</p>
-            <p>${doel.leerdoel_2}</p>
-            <p>${doel.leerdoel_3}</p>
-        `).join('') : '';
-
         templateHTML = `
             <h2>${info.eventTitle}</h2>
-            <p>${info.programmer}</p>
+            <p>${info.involved}</p>
 
             <section class="infos-section">
                 ${infosHTML}
             </section>
-
-            ${leerdoelen ? `
-                <h3>Leerdoelen:</h3>
-                ${leerdoelen}
-            ` : ''}
 
             ${websiteLinksHTML ? `
                 <h3>Website Links:</h3>
@@ -167,7 +156,28 @@ window.handleSatelliteClick = (index) => {
             ` : ''
             }`;
         ;
-    } else {
+    } else if (info.category === "Leerdoelen") {
+        const leerdoelTekst = info.leerdoelinfo ? `<p>${info.leerdoelinfo}</p>` : '';
+        const hulpmiddelenTekst = info.hulpmiddelen ? `<p>${info.hulpmiddelen}</p>` : '';
+
+        templateHTML = `
+            <h2>${info.title}</h2>
+            <p>Status: ${info.status}</p>
+
+            <section class="infos-section">
+                <h3>Leerdoel</h3>
+                ${leerdoelTekst}
+            </section>
+
+            ${info.hulpmiddelen ? `
+                <section class="tools-section">
+                    <h3>Hulpmiddelen</h3>
+                    ${hulpmiddelenTekst}
+                </section>
+            ` : ''}
+        `;
+    }
+    else {
         templateHTML = `
             <h2>${info.eventTitle}</h2>
             <p>${info.date}</p>
@@ -211,7 +221,7 @@ window.handleMoonClick = (index) => {
 
     detailsContent.innerHTML = `
         <h2>${info.eventTitle}</h2>
-        <h3>Spreker: ${info.speaker}</h3>
+        <h3>Spreker: ${info.involved}</h3>
         <h3>Datum: ${info.date}</h3>
         
         <section class="infos-section">

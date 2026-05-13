@@ -3,7 +3,7 @@
         "Weekly Nerd": [
             {
                 "eventTitle": "The Rule of Least Power",
-                "speaker": "Kilian Valkhoff",
+                "involved": "Kilian Valkhoff",
                 "date": "04-02-2026",
                 "infos": [
                     {
@@ -76,7 +76,7 @@
             },
             {
                 "eventTitle": "Browser en support detection",
-                "speaker": "Peter Paul Koch",
+                "involved": "Peter Paul Koch",
                 "date": "19-02-2026",
                 "infos": [
                     {
@@ -133,7 +133,7 @@
             },
             {
                 "eventTitle": "9Elements & Web Design Evolution",
-                "speaker": "Nils Binder",
+                "involved": "Nils Binder",
                 "date": "04-03-2026",
                 "infos": [
                     {
@@ -150,7 +150,7 @@
                     },
                     {
                         "title": "Nieuwe Technieken",
-                        "content": "Moderne CSS biedt krachtige tools zoals View-transitions voor vloeiende overgangen tussen pagina's en de 'fr' unit voor flexibele grids."
+                        "content": "Moderne CSS biedt krachtige hulpmiddelen zoals View-transitions voor vloeiende overgangen tussen pagina's en de 'fr' unit voor flexibele grids."
                     }
                 ],
                 "codeTips": [
@@ -194,7 +194,7 @@
             },
             {
                 "eventTitle": "Ff formulieren maken - NL Design system richtlijnen",
-                "speaker": "Robbert Broersma",
+                "involved": "Robbert Broersma",
                 "date": "12-03-2026",
                 "infos": [
                     {
@@ -263,7 +263,7 @@
             },
             {
                 "eventTitle": "Alternative Digital Infrastructure",
-                "speaker": "Rosa",
+                "involved": "Rosa",
                 "date": "02-04-2026",
                 "infos": [
                     {
@@ -293,7 +293,7 @@
                         "note": "De keuze voor software en frameworks heeft directe impact op de hardware-eisen; oudere servers vragen om efficiënte keuzes in HTML, CSS en JS."
                     },
                     {
-                        "selector": "Self-hosting tools",
+                        "selector": "Self-hosting hulpmiddelen",
                         "note": "Gebruik YunoHost voor serverbeheer, Forgejo voor Git, en Icecast2 voor het streamen van je eigen radio."
                     },
                     {
@@ -320,7 +320,7 @@
             },
             {
                 "eventTitle": "Accessibility",
-                "speaker": "Johann Huijkman",
+                "involved": "Johann Huijkman",
                 "date": "09-04-2026",
                 "infos": [
                     {
@@ -379,20 +379,23 @@
         "Meesterschap": [
             {
                 "eventTitle": "Sprint 0",
-                "programmer": "Diego Ramon",
+                "involved": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik gemaakt",
+                        "content": "Voor onze aller eerste project moesten wij een introductie website bouwen. Deze website moest (in één pagina) aantonen wie wij zijn maar ook API data ophalen van een online database. Ik heb hier een ruimte thema gebruikt omdat ik zelf een HELE ZWARE passie heb voor de ruimte.",
+                        "image": "./assets/img/Meesterschap/Sprint0/Sprint0_Frontpage.png"
+                    },
+                    {
+                        "title": "Wat heb ik ervan geleerd",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": "./assets/img/Meesterschap/Sprint0/Sprint0_Satellites.png"
+                    },
+                    {
+                        "title": "Feedback",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
-                    {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
                     }
                 ],
                 "website":[
@@ -404,45 +407,23 @@
             },
             {
                 "eventTitle": "Hackaton",
-                "programmer": "Diego Ramon",
+                "involved": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik gemaakt",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
+                    },
                     {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
-                    }
-                ],
-                "website":[
-                    {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
-                    }
-                ]
-            },
-            {
-                "eventTitle": "Meesterschap Blog",
-                "programmer": "Diego Ramon",
-                "date": "09-04-2026",
-                "infos": [
-                    {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik ervan geleerd",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
+                    },
                     {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
+                        "title": "Feedback",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
                 "website":[
@@ -453,141 +434,77 @@
                 ]
             }
         ],
-        "Weekly Geek": [
+        "Leerdoelen": [
             {
-                "eventTitle": "Its hard to justify Tahoe Icons",
-                "speaker": "Niki",
-                "date": "16/02/2026",
-                "infos": [
-                    {
-                        "Onderwerp": "",
-                        "Uitleg": ""
-                    }
-                ],
-                "geleerd": [
-                    {
-                        "Titel": "Wat heb ik geleerd",
-                        "Uitleg": ""
-                    }
-                ],
-                "website":[
-                    {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
-                    }
-                ]
+                "eventTitle" : "Leerdoel 1",
+                "involved" : "Oud",
+                "date" : "02-02-2026",
+                "leerdoelinfo" : "Ik wil vloeiende en herbruikbare animaties maken met CSS en JavaScript en wil weten waar ik dit toepas.",
+                "hulpmiddelen" : "JS en CSS"
             },
             {
-                "eventTitle": "UX/HTML opdracht",
-                "speaker": "Vasilis",
-                "date": "16/02/2026",
-                "infos": [
-                    {
-                        "Onderwerp": "",
-                        "Uitleg": ""
-                    }
-                ],
-                "geleerd": [
-                    {
-                        "Titel": "Wat heb ik geleerd",
-                        "Uitleg": ""
-                    }
-                ],
-                "website":[
-                    {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
-                    }
-                ]
+                "eventTitle" : "Leerdoel 2",
+                "involved" : "Oud",
+                "date" : "02-02-2026",
+                "leerdoelinfo" : "Ik wil verschillende vormen en visuele elementen kunnen maken met alleen CSS, zonder afbeeldingen.",
+                "hulpmiddelen" : "CSS en Internet"
             },
             {
-                "eventTitle": "What happened to text inputs",
-                "speaker": "Web-bed briefs/heydon",
-                "date": "16/02/2026",
-                "infos": [
-                    {
-                        "Onderwerp": "",
-                        "Uitleg": ""
-                    }
-                ],
-                "geleerd": [
-                    {
-                        "Titel": "Wat heb ik geleerd",
-                        "Uitleg": ""
-                    }
-                ],
-                "website":[
-                    {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
-                    }
-                ]
+                "eventTitle" : "Leerdoel 3",
+                "involved" : "Oud",
+                "date" : "02-02-2026",
+                "leerdoelinfo" : "Ik wil API-data kunnen omzetten naar HTML door middel van DOM-manipulatie met JavaScript.",
+                "hulpmiddelen" : "Javascript en JSON/API"
             },
             {
-                "eventTitle": "Introductie over Exclusie Design - Flipping Things",
-                "speaker": "Vasilis",
-                "date": "16/02/2026",
-                "infos": [
-                    {
-                        "Onderwerp": "",
-                        "Uitleg": ""
-                    }
-                ],
-                "geleerd": [
-                    {
-                        "Titel": "Wat heb ik geleerd",
-                        "Uitleg": ""
-                    }
-                ],
-                "website":[
-                    {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
-                    }
-                ]
+                "eventTitle" : "Leerdoel 4",
+                "involved" : "Oud",
+                "date" : "02-02-2026",
+                "leerdoelinfo" : "Ik wil HTML-elementen kunnen genereren op basis van API-informatie.",
+                "hulpmiddelen" : ""
             },
             {
-                "eventTitle": "Accessibility and the Agentic Web",
-                "speaker": "Léonie Watson",
-                "date": "16/02/2026",
-                "infos": [
-                    {
-                        "Onderwerp": "",
-                        "Uitleg": ""
-                    }
-                ],
-                "geleerd": [
-                    {
-                        "Titel": "Wat heb ik geleerd",
-                        "Uitleg": ""
-                    }
-                ],
-                "website":[
-                    {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
-                    }
-                ]
+                "eventTitle" : "Leerdoel 1",
+                "involved" : "Nieuw",
+                "date" : "15-05-2026",
+                "leerdoelinfo" : "Ik wil meer kunnen focussen op één opdracht tegelijkertijd, op dit moment ben ik snel afgeleid en ga ik naar een andere opdracht/functie omdat die bijvoorbeeld in mijn hoofd zit, maar ik moet leren focussen op één tegelijkertijd. Dit is dan bij te houden in Github branches (Bijvoorbeeld een branch maken voor specifiek 1 functie, en deze branch dat ook ALLEEN gebruiken voor die functie)",
+                "hulpmiddelen" : "Github, Html, CSS, Javascript"
+            },
+            {
+                "eventTitle" : "Leerdoel 2",
+                "involved" : "Nieuw",
+                "date" : "15-05-2026",
+                "leerdoelinfo" : "Ik wil beter leren begrijpen wat de klant verwacht in het product. Op dit moment heb ik voornamelijk ervaring met voor één persoon, maar ik wil het voor meerdere klanten/opdrachtgevers leren. Nu weet ik heel goed hoe ik één persoon blij kan maken, maar meerdere personen hebben meerdere meningen en dan kan conflicten met elkaar.",
+                "hulpmiddelen" : "Opdrachtgevers, teamgenoten, HTML, CSS, Javascript"
+            },
+            {
+                "eventTitle" : "Leerdoel 3",
+                "involved" : "Nieuw",
+                "date" : "15-05-2026",
+                "leerdoelinfo" : "Meer leren met AI om te gaan, op dit moment gebruik ik AI alleen af en toe om code te reviewen of problemen op te lossen, maar de toekomst maakt steeds meer gebruik van AI, dus ik wil ook echt leren coderen met AI erbij (Dus bijvoorbeeld Co-Pilot). Hiermee wil ik mijn snelheid van functies maken versnellen en daardoor sneller mooie producten maken.",
+                "hulpmiddelen" : "Claude (AI), Co-Pilot (AI), HTML, CSS, Javascript"
             }
-
         ],
         "Vakken": [
             {
                 "eventTitle": "BT",
-                "programmer": "Diego Ramon",
+                "involved": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik gemaakt",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
+                    },
                     {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
+                        "title": "Wat heb ik ervan geleerd",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Feedback",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
                 "website":[
@@ -599,37 +516,51 @@
             },
             {
                 "eventTitle": "CSS",
-                "speaker": "Sanne",
+                "involved": "Sanne",
                 "date": "16/02/2026",
                 "infos": [
                     {
-                        "title": "",
-                        "content": ""
+                        "title": "Wat heb ik gemaakt",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Wat heb ik ervan geleerd",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Feedback",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
-                "codeExamples": [
+                "website":[
                     {
-                        "language": "[Geen]",
-                        "code": "[Geen]"
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
                     }
                 ]
             },
             {
                 "eventTitle": "API",
-                "programmer": "Diego Ramon",
+                "involved": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik gemaakt",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
+                    },
                     {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
+                        "title": "Wat heb ik ervan geleerd",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Feedback",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
                 "website":[
@@ -641,20 +572,23 @@
             },
             {
                 "eventTitle": "HCD",
-                "programmer": "Diego Ramon",
+                "involved": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik gemaakt",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
+                    },
                     {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
+                        "title": "Wat heb ik ervan geleerd",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Feedback",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
                 "website":[
@@ -668,20 +602,23 @@
         "Meesterproef": [
             {
                 "eventTitle": "Meesterproef",
-                "programmer": "Diego Ramon",
+                "involved": "Diego Ramon",
                 "date": "09-04-2026",
                 "infos": [
                     {
-                        "title": "Uitleg",
+                        "title": "Wat heb ik gemaakt",
                         "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
                         "image": ""
-                    }
-                ],
-                "leerdoelen":[
+                    },
                     {
-                        "leerdoel_1" : "Geen",
-                        "leerdoel_2" : "Geen",
-                        "leerdoel_3" : "Geen"
+                        "title": "Wat heb ik ervan geleerd",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Feedback",
+                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "image": ""
                     }
                 ],
                 "website":[
