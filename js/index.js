@@ -119,9 +119,22 @@ window.handleSatelliteClick = (index) => {
         `).join('') : '';
 
             templateHTML = `
-            <h2>${info.eventTitle}</h2>
-            <h3>Spreker: ${info.involved}</h3>
-            <h3>Datum: ${info.date}</h3>
+            <div class="nerdsInfo">
+                <div>
+                    <h2>${info.eventTitle}</h2>
+                    <p>Titel</p>
+                </div>
+
+                <div>
+                    <h2>${info.involved}</h2>
+                    <p>Spreker</p>
+                </div>
+                
+                <div>
+                    <h3>${info.date}</h3>
+                    <p>Datum</p>
+                </div>
+            </div>
             
             <section class="infos-section">
                 ${infosHTML}

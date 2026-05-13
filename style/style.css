@@ -148,7 +148,6 @@ code {
     width: 35vw;
     max-width: 600px;
     z-index: 3;
-    padding: 3rem 2rem;
     
     background: transparent;
     backdrop-filter: blur(5px);
@@ -216,7 +215,7 @@ code {
         border: none;
         border-radius: 0.5rem;
         color: white;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         margin-top: 1rem;
         cursor: pointer;
 
@@ -246,12 +245,6 @@ code {
                     font-weight: bold;
                 }
         }
-    }
-
-
-    h3 {
-        border-top: 1px solid white;
-        padding: 1rem;
     }
 }
 
@@ -293,6 +286,44 @@ code {
     }
 }
 
+.nerdsInfo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 1rem;
+
+    div{
+        &:first-of-type{
+            padding-top: 1rem;
+        }
+
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+
+        h2, h3{
+            padding-left: 1rem;
+        }
+
+        h3:last-of-type{
+            border-bottom: white 1px solid;
+            padding-bottom: 1rem;
+        }
+        
+        p{
+            position: absolute;
+            padding-bottom: 1.8rem;
+            color: rgb(143, 143, 143);
+
+            &:last-of-type{
+                padding-bottom: 3.2rem;
+            }
+        }
+    }
+    
+}
+
 .website-block{
     margin-top: 1rem;
 }
@@ -327,6 +358,7 @@ code {
     border-radius: 6px;
     margin-bottom: 20px;
     padding: 1rem;
+    margin-top: 1rem;
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
