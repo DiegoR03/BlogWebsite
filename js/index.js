@@ -49,13 +49,22 @@ window.filterByEvent = (selectedEvent) => {
     `;
     selectorContainer.insertAdjacentHTML('beforeend', backBtn);
 
-    flatData.forEach((nerd, originalIndex) => {
-        if (nerd.category === selectedEvent) {
+    flatData.forEach((category, originalIndex) => {
+        if (category.category === selectedEvent) {
+            let ratingClass = 'rating-default';
+
+            if (category.rating === "In progressie" || category.rating === "-/10.0") {
+                ratingClass = 'rating-unfinished';
+            } else if (category.rating === "9.5/10.0" || category.rating === "10.0/10.0") {
+                ratingClass = 'rating-perfect';
+            }
+
             const selectorList = `
                 <li>
                     <button onclick="handleSatelliteClick(${originalIndex})">
-                        <h2>${nerd.eventTitle}</h2>
-                        <p><em>${nerd.involved} - ${nerd.date}</em></p>
+                        <h2>${category.eventTitle}</h2>
+                        <p><em>${category.involved} - ${category.date}</em></p>
+                        <p class="${ratingClass}">${category.rating}</p>
                     </button>    
                 </li>
             `;
@@ -77,7 +86,7 @@ window.handleSatelliteClick = (index) => {
     const detailsContainer = document.getElementById('details-container');
     const detailsContent = document.getElementById('details-content');
 
-    const websiteLinksHTML = info.websites ? info.websites.map(website => {
+    const websiteLinksHTML = info.website ? info.website.map(website => {
         const url = website.websiteLink.startsWith('http')
             ? website.websiteLink
             : `https://${website.websiteLink}`;
@@ -144,14 +153,29 @@ window.handleSatelliteClick = (index) => {
 
         templateHTML = `
             <h2>${info.eventTitle}</h2>
-            <p>${info.involved}</p>
+            <div class="info-container">
+                <div>
+                    <p>Betrokken:</p>
+                    <p>${info.involved}</p>
+                </div>
+                <div>
+                    <p>Datum</p>
+                    <p>${info.date}</p>
+                </div>
+                
+                <div>
+                    <p>Beoordeling:</p>
+                    <p>${info.rating}</p>
+                </div>
+            </div>
+            
 
             <section class="infos-section">
                 ${infosHTML}
             </section>
 
             ${websiteLinksHTML ? `
-                <h3>Website Links:</h3>
+                <h2>Website Links:</h2>
                 ${websiteLinksHTML}
             ` : ''
             }`;
@@ -161,8 +185,10 @@ window.handleSatelliteClick = (index) => {
         const hulpmiddelenTekst = info.hulpmiddelen ? `<p>${info.hulpmiddelen}</p>` : '';
 
         templateHTML = `
-            <h2>${info.title}</h2>
-            <p>Status: ${info.status}</p>
+            <h2>${info.eventTitle}</h2>
+            <p>Relevantie: ${info.involved}</p>
+            <p>Datum: ${info.date}</p>
+            <p>${info.rating}</p>
 
             <section class="infos-section">
                 <h3>Leerdoel</h3>

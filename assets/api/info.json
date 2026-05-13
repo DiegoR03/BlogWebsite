@@ -5,6 +5,7 @@
                 "eventTitle": "The Rule of Least Power",
                 "involved": "Kilian Valkhoff",
                 "date": "04-02-2026",
+                "rating" : "Aanwezig",
                 "infos": [
                     {
                         "title": "The Rule of Least Power",
@@ -78,6 +79,7 @@
                 "eventTitle": "Browser en support detection",
                 "involved": "Peter Paul Koch",
                 "date": "19-02-2026",
+                "rating" : "Aanwezig",
                 "infos": [
                     {
                     "title": "Browser Componenten",
@@ -114,7 +116,7 @@
                     "note": "Geeft alle formulier-onderdelen terug op volgorde."
                     },
                     {
-                    "selector": "<frameset>",
+                    "selector": "frameset",
                     "note": "Oude techniek die elke keer een eigen pagina inlaadt."
                     }
                 ],
@@ -135,6 +137,7 @@
                 "eventTitle": "9Elements & Web Design Evolution",
                 "involved": "Nils Binder",
                 "date": "04-03-2026",
+                "rating" : "Aanwezig",
                 "infos": [
                     {
                         "title": "9Elements Agency",
@@ -196,6 +199,7 @@
                 "eventTitle": "Ff formulieren maken - NL Design system richtlijnen",
                 "involved": "Robbert Broersma",
                 "date": "12-03-2026",
+                "rating" : "Aanwezig",
                 "infos": [
                     {
                     "title": "NL Design System & Frameless",
@@ -265,6 +269,7 @@
                 "eventTitle": "Alternative Digital Infrastructure",
                 "involved": "Rosa",
                 "date": "02-04-2026",
+                "rating" : "Aanwezig",
                 "infos": [
                     {
                         "title": "Wat is een hacker?",
@@ -322,6 +327,7 @@
                 "eventTitle": "Accessibility",
                 "involved": "Johann Huijkman",
                 "date": "09-04-2026",
+                "rating" : "Aanwezig",
                 "infos": [
                     {
                         "title": "De Essentie van Toegankelijkheid",
@@ -374,13 +380,56 @@
                         "websiteInfo" : "Geen"
                     }
                 ]
+            },
+            {
+                "eventTitle": "Creatieve Klokken en CSS Experimenten",
+                "involved": "Niels Leenheer",
+                "date": "17-04-2026",
+                "rating": "Aanwezig",
+                "infos": [
+                    {
+                    "title": "Inspiratie door klokken",
+                    "content": "Niels Leenheer raakte super geïnspireerd door allerlei verschillende soorten klokken. Hij vond voor zijn project een rond digitaal schermpje en dat was precies wat hij nodig had om zijn eigen klok op te ontwerpen."
+                    },
+                    {
+                    "title": "Speelse interacties",
+                    "content": "Wat zijn verhaal zo interessant maakte, was dat hij veel functies en animaties toevoegde die de klok heel speels maakten. Hij liet bijvoorbeeld zien dat de wijzers van de klok naar de onderkant vallen als je de klok echt heen en weer schudt."
+                    },
+                    {
+                    "title": "CSS op een oscilloscoop",
+                    "content": "Hij ging nog een stapje verder door een klok te maken op een oscilloscoop. Dat ging alleen niet helemaal soepel: hij vertelde dat er per ongeluk eentje in de fik was gevlogen omdat hij zoveel CSS had geschreven voor het project."
+                    },
+                    {
+                    "title": "Doom en lasers",
+                    "content": "Het bleef niet alleen bij klokken; hij kreeg het ook voor elkaar om het spel Doom en andere CSS-applicaties op een oscilloscoop te draaien. Tot slot had hij al deze vette creaties zelfs werkend gekregen op een laser."
+                    }
+                ],
+                "codeTips": [
+                    {
+                        "selector": "Geen",
+                        "note": "[Geen]"
+                    }
+                ],
+                "codeExamples": [
+                    {
+                        "language": "Geen",
+                        "code": "[Geen]"
+                    }
+                ],
+                "websites": [
+                    {
+                        "websiteLink": "Geen",
+                        "websiteInfo": "Geen"
+                    }
+                ]
             }
         ],
         "Meesterschap": [
             {
                 "eventTitle": "Sprint 0",
-                "involved": "Diego Ramon",
-                "date": "09-04-2026",
+                "involved": "Solo",
+                "date": "03-02-2026",
+                "rating" : "Voldaan",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
@@ -388,48 +437,49 @@
                         "image": "./assets/img/Meesterschap/Sprint0/Sprint0_Frontpage.png"
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
-                        "image": "./assets/img/Meesterschap/Sprint0/Sprint0_Satellites.png"
+                        "title": "Inzichten",
+                        "content": "Tijdens dit project heb ik meerdere niuewe inzichten gekregen zoals; <ul> <li>Geleerde met thema's te werken voor light/dark mode. Eerst hield ik de standaard zwart naar wit regel aan, maar tijdens dit project heb ik geleerd dit in verschillende thema's te doen. Dit project houdt dag en nacht aan!</li> <li>Te werken met ForEach om elke student zijn eigen object te geven. We moesten de data van andere student op een creatieve manier verwerken, dus heb ik elke student zijn eigen planeet gegeven om het thema aan te houden.</li> <li>API Data op te halen vanuit een online database. De hoofdopdracht was om je eigen API data op te halen en deze om te zetten naar HTML elementen en informatie.</li> <li>CSS kan tricky zijn, het heeft flink wat tijd gekost (destijds) om een mooioe website op te zetten met een thema dat mij aanspreek.</li> </ul>",
+                        "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "Prima website - leuk overkoepelend idee. Stylistisch nog wel een beetje all over the place, maar dat gaat vast helemaal goed komen bij de volgende websites als je wat meer tijd hebt.",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://diegor03.github.io/IntroductionWebsite/",
+                        "websiteInfo" : "Dit is de link naar de Sprint 0 website"
                     }
                 ]
             },
             {
                 "eventTitle": "Hackaton",
-                "involved": "Diego Ramon",
-                "date": "09-04-2026",
+                "involved": "Team",
+                "date": "23-03-2026",
+                "rating" : "Voldaan",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
-                        "image": ""
+                        "content": "Voor de hackaton kregen wij de opdracht om voor een echt bedrijf te werken. In één week tijd moesten wij een prototype website bouwen voor de opdrachtgever SRON. Wij moesten een pagina bouwen voor de Nebula Xplorer, een satelliet die zij aan het bouwen zijn. Wij mochten helemaal los gaan in het design zoalsn het maar een goede UX heeft, responsive is, elegante code bevat, veel details heeft.",
+                        "image": "./assets/img/Meesterschap/Hackaton/Hackaton_Frontpage.png"
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "title": "Inzichten",
+                        "content": "Tijdens dit project heb ik meerdere niuewe inzichten gekregen zoals; <ul> <li>Ik heb geleerd dat de eisen van een echt bedrijf heel anders kunnen zijn dan dat van een school opdracht. Er is veel data die je moet verwerken maar het moei ook een bepaald thema aanhouden. Dit was gaaf maar soms ook pittig!</li> <li>Teamwerk is heel fijn als je teamgenoten hebt die goed communiceren met elkaar en elkaar ondersteunen waar nodig is.</li> <li>Je kan emt CSS véél meer dan ik dacht, ik heb een heel zwart gat gemaakt met CSS en Javascript, en het lijkt nog accuraat ook (vooral aan films zoals interstellar)</li> <li>En als laatst heb ik geleerd dat je soms niet altijd alles kan winnen, soms winnen er teams waar je het oneens mee bent, maar dit is wel realistich.</li> </ul>",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "De klant vond de website heel mooi en heeft ook aangegeven dat de website heel erg voldoet aan de huisstijl van SRON zelf zonder dat zij hebben gevraagd de huisstijl te volgen, zij was hier heel blij mee!",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://diegor03.github.io/Hackton_2026_Team_2/",
+                        "websiteInfo" : "Dit is de link naar de Hackaton website"
                     }
                 ]
             }
@@ -439,6 +489,7 @@
                 "eventTitle" : "Leerdoel 1",
                 "involved" : "Oud",
                 "date" : "02-02-2026",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil vloeiende en herbruikbare animaties maken met CSS en JavaScript en wil weten waar ik dit toepas.",
                 "hulpmiddelen" : "JS en CSS"
             },
@@ -446,6 +497,7 @@
                 "eventTitle" : "Leerdoel 2",
                 "involved" : "Oud",
                 "date" : "02-02-2026",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil verschillende vormen en visuele elementen kunnen maken met alleen CSS, zonder afbeeldingen.",
                 "hulpmiddelen" : "CSS en Internet"
             },
@@ -453,6 +505,7 @@
                 "eventTitle" : "Leerdoel 3",
                 "involved" : "Oud",
                 "date" : "02-02-2026",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil API-data kunnen omzetten naar HTML door middel van DOM-manipulatie met JavaScript.",
                 "hulpmiddelen" : "Javascript en JSON/API"
             },
@@ -460,6 +513,7 @@
                 "eventTitle" : "Leerdoel 4",
                 "involved" : "Oud",
                 "date" : "02-02-2026",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil HTML-elementen kunnen genereren op basis van API-informatie.",
                 "hulpmiddelen" : ""
             },
@@ -467,6 +521,7 @@
                 "eventTitle" : "Leerdoel 1",
                 "involved" : "Nieuw",
                 "date" : "15-05-2026",
+                "rating" : "In progressie",
                 "leerdoelinfo" : "Ik wil meer kunnen focussen op één opdracht tegelijkertijd, op dit moment ben ik snel afgeleid en ga ik naar een andere opdracht/functie omdat die bijvoorbeeld in mijn hoofd zit, maar ik moet leren focussen op één tegelijkertijd. Dit is dan bij te houden in Github branches (Bijvoorbeeld een branch maken voor specifiek 1 functie, en deze branch dat ook ALLEEN gebruiken voor die functie)",
                 "hulpmiddelen" : "Github, Html, CSS, Javascript"
             },
@@ -474,6 +529,7 @@
                 "eventTitle" : "Leerdoel 2",
                 "involved" : "Nieuw",
                 "date" : "15-05-2026",
+                "rating" : "In progressie",
                 "leerdoelinfo" : "Ik wil beter leren begrijpen wat de klant verwacht in het product. Op dit moment heb ik voornamelijk ervaring met voor één persoon, maar ik wil het voor meerdere klanten/opdrachtgevers leren. Nu weet ik heel goed hoe ik één persoon blij kan maken, maar meerdere personen hebben meerdere meningen en dan kan conflicten met elkaar.",
                 "hulpmiddelen" : "Opdrachtgevers, teamgenoten, HTML, CSS, Javascript"
             },
@@ -481,6 +537,7 @@
                 "eventTitle" : "Leerdoel 3",
                 "involved" : "Nieuw",
                 "date" : "15-05-2026",
+                "rating" : "In progressie",
                 "leerdoelinfo" : "Meer leren met AI om te gaan, op dit moment gebruik ik AI alleen af en toe om code te reviewen of problemen op te lossen, maar de toekomst maakt steeds meer gebruik van AI, dus ik wil ook echt leren coderen met AI erbij (Dus bijvoorbeeld Co-Pilot). Hiermee wil ik mijn snelheid van functies maken versnellen en daardoor sneller mooie producten maken.",
                 "hulpmiddelen" : "Claude (AI), Co-Pilot (AI), HTML, CSS, Javascript"
             }
@@ -488,113 +545,117 @@
         "Vakken": [
             {
                 "eventTitle": "BT",
-                "involved": "Diego Ramon",
-                "date": "09-04-2026",
+                "involved": "Solo",
+                "date": "16-02-2026",
+                "rating" : "9.0/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
-                        "image": ""
+                        "content": "Voor Browser Tech (BT) heb ik een website moeten creeëren die wat anders was dan gebruikelijk. Hier moesten wij een formulier maken, niet zomaar een formulier maar een erfgoed formulier. Niet allen dat, maar het moest in de huisstijl van Nationale Spoorwegen(NS) om proberen te voorkomen met te overheid :P. Tijdens het maken kwamen een paar eisen omhoog, de website moet compleet werken zelfs als er geen javascript aanwezig is, het moet de huisstijl van NS volgend (logisch), probeer te denken aan details, maak het gebruiksvriendelijk en toegankelijk en enhance de standaard UX-features die HTML biedt met CSS en Javascript.",
+                        "image": "./assets/img/Vakken/BT/BT_Frontpage.png"
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "title": "Inzichten",
+                        "content": "Tijdens dit project heb ik meerdere niuewe inzichten gekregen zoals; <ul> <li>Formulieren zijn echt heel ingewikkeld, formulieren op een website toepassen kan vrij simpel zijn, maar als je er dieper op in kijkt speelt er heel veel 'behind te scenes', en al helemaal als alles toegankelijk moet zijn. Dit project heeft me een heel nieuw idee gegeven over formulieren op websites.</li> <li>Het is verassend moeilijk om een website te laten werken zonder javascript, ik had best veel enhancements gemaakt met javascript waar ik allemaal omweggetjes voor moest maken omdat het zonder javscript niet werkt.</li> <li>De NS huisstijl heeft verassend slecht contrast in light mode, de gele en witte kleuren clashen heel vaak met elkaar waardoor de website niet fijn oogt.</li> <li>Het is wel heel fijn om niet alle data zelf te hoeven verzinnen. Omdat het formulier al bestond hoefde wij het alleen te vertalne naar HTML, CSS en Javascript.</li> </ul>",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "Echt heel erg goed. Petje af. Overcompleet, prachtige attention to detail op alle vlakken, zowel op het gebied van code, als op het gebied van UX, maar ook je documentatie is prima in orde.",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://diegor03.github.io/WebDD-NS-Erfgoed/",
+                        "websiteInfo" : "Dit is de link naar de Hackaton website, er is geen font aanwezig omdat wij deze niet mochten uploaden i.v.m. copyright."
                     }
                 ]
             },
             {
                 "eventTitle": "CSS",
-                "involved": "Sanne",
-                "date": "16/02/2026",
+                "involved": "Solo",
+                "date": "19/02/2026",
+                "rating" : "8.5/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
-                        "image": ""
+                        "content": "Het vak CSS to the Rescue (Ook wel CSS) was één van de meest ingewikkelde vakken die ik heb gevolgd tijdens deze minor. Tijdens dit vak kregen wij de optie uit 3 mogelijke opdrachten, Control Panel - Silyl Walk - Artifaction en Rubrik's kubus. Ik wilde mijzelf uitdagen en had voor de Rubrik's kubus gekozen, ik wilde namelijk heel graag 3D leren op websites. Ondanks het feit dat het moeilijk was heb ik uiteindelijk een Rubrik's kubus gemaakt die alle kanten op kan draaien, hier ben ik zo trots op omdat je ALLEEN CSS mocht gebruiken, geen javascript of andere talen, alleen CSS en HTML. Dit betekende dus dat ik elke draai handmatig moest voorprogrammeren, voor deze reden maakt dit vak het dus een van mijn meest trotse projecten, ondanks dat het het miscchien niet het mooiste resultaat is.",
+                        "image": "./assets/img/Vakken/CSS/CSS_Frontpage.png"
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "title": "Inzichten",
+                        "content": "Tijdens dit project heb ik meerdere niuewe inzichten gekregen zoals; <ul> <li>Ik heb voor het eerst met 3D mogen werken op een website, en het was geweldig. Ik mocht werken met 'transform-style: preserve-3d', dit zorgt ervoor dat je HTML elementen ook op de derde dimensie kan aanpassen.</li> <li>CSS only is één van de moeilijke onderwerpen ooit, ik ben er tijdens dit vak achter gekomen hoe afhankelijk je eigenlijk bent van Javascript. Hoewel bijna alles nog steeds mogelijk is met CSS only, is het nog steeds heel ingewikkeld.</li> <li>CSS geeft, ondanks de moeilijkheidsgraad, nog steeds alle opties die je nodig hebt. Dit vak heeft mij laten zien dat je nog steeds alles kan doen, zelfs als het een omweg heeft van een paar uur.</li> </ul>",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "Ziet er geweldig uit, volgende keer eerder beginnen met de website zelf stylen, dan hoef je niet zo lang bezig te zijn met het coderen van de kubus. Gun jezelf rust.",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://diegor03.github.io/RubicsCube_CSS/",
+                        "websiteInfo" : "Dit is de link naar de CSS website."
                     }
                 ]
             },
             {
                 "eventTitle": "API",
-                "involved": "Diego Ramon",
-                "date": "09-04-2026",
+                "involved": "Solo",
+                "date": "01-04-2026",
+                "rating" : "9.5/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
-                        "image": ""
+                        "content": "Het vak API was mijn favoriete vak. Voor dit vak kregen wij de opdracht om een website te maken die, net zoals Sprint 0, data ophaalt uit een online database/JSON file. Ik vond deze opdracht specifiek leuk omdat wij hier zelf al onze keuzes mochten maken. Zolang er minimaal 1 content API gekozen was en twee Web API's, mochten wij zelf kiezen waar deze content API over ging en welke Web API wij gebruikten om de website te verbeteren. Persoonlijk ben ik gegaan voor de Nasa NEO (Near Earth Objects) API gegaan, deze API toont alle objecten in de ruimte die dicht bij de aarde in de buurt zijn. Deze rauwe data heb ik omgezte naar een website die per week alle objecten laat zien. Elke object heeft zijn eigen 'komeet' op de website, en je kan dynamisch tussen de weken heel switchen. Natuurlijk is dat niet alleen de opdracht, daarnaast moesten wij onze website ook live zetten met gebruik van Astro op een website genaamt OnRender. OnRender is een online hosting service waar je gratis je website via de server-side kan runnen. Hoe mooi het design ook was, moesten wij verplicht de website online kunnen zetten.",
+                        "image": "./assets/img/Vakken/API/API_Frontpage.png"
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "title": "Inzichten",
+                        "content": "Tijdens dit project heb ik meerdere niuewe inzichten gekregen zoals; <ul> <li>Het verwerken van bestaande data is geweldig, ik vind het super leuk om data te verwerken in HTML elementen en deze dynamisch toe te kunnen voegen aan websites. In het begin van deze minor had ik hier best veel moeite mee, maar nu vind ik het één van de leukste dingen om te doen!</li> <li>Radiaal HTML elementen plaatsen is verassend moeilijk, in het begin had ik een heel plan gemaakt om snel deze objecten om de aarde heen te plaatsen, maar ik kwam er al snel achter dat dit heel ingewikkeld was. Niet alleen moest ik de plaatsing vanaf het midden van de website goed hebben, maar ik moest de plaatsen van de afstanden vanuit de data ook nog goed hebben. Ik plaatste de objecten namelijk in afstandsringen zodat je snel visueel te zien kreeg waar ze staan tenopzichte van de aarde.</li> <li>Astro werkt net niet als HTML, hoewel het dezelfde elementen gebruikt zijn andere opties weer anders. Een voorbeeld is dat Typescript niet goed samen gaat met Astro. Je krijgt constant errors die je normaal met HTML niet zou krijgen, maar met Astro vangt hij dat verkeert op.</li> <li>Het live zetten van servers is verassend makkelijk als je eenmaal weet hoe het werkt. In het begin dat ik dat het heel ingewikkeld zou zijn en uren aan werk, maar uiteindelijk kostte het mij, met behulp van een workshop, nog niet eens een uur!</li> </ul>",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "Geen directe feedback vanaf DLO, maar hij gaf tijdens het gesprek aan dat hij mijn code en project heel mooi vond! Hij heeft zelfs wat code van mij gestolen :P",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://webdd-api-nasa.onrender.com/",
+                        "websiteInfo" : "Dit is de link naar de CSS website via de OnRender hosting service."
                     }
                 ]
             },
             {
                 "eventTitle": "HCD",
-                "involved": "Diego Ramon",
-                "date": "09-04-2026",
+                "involved": "Solo",
+                "date": "30-03-2026",
+                "rating" : "-/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
-                        "image": ""
+                        "content": "Voor HCD kregen wij een vrij unieke opdracht. Tijdens de debriefing werd de klas verdeeld over 4 opdrachtgevers: Darive, Roger, Berend en Ihab. Elk van deze personen heeft een handicap: Doof zijn, slecht ziend zijn of zelfs compleet blind. Ik werd ingedeeld bij Darice, zij is op latere leeftijd doof geworden. Darice wilde dat wij een website ontwierpen waar zij de inhoud van podcasts kan volgens, dit houdt dus ook in: hoorbare details, sfeergeluid, geluidseffecten, nuances zoals intonatie en andere eigenschappen zoals emoties. Ik vond dit een interessante maar hele leuk uitdaging. Uiteindelijk heb ik een website ontworpen waar je de video van een podcast zien, hoofdstukken kan uitkiezen uit de podcast en doorspoelen (podcasts bestaan vaak uit hoofdstukken), en hele transcriptie aan de rechter kant die de tijd van de video bijhoudt zodat je live kan zien wat er wordt gezegt én een hele 'settings-box' zodat Darice zelf alle instellingen kan toepassen die zij wilt veranderen op de website. De instellingen die ik heb uitgewerkt zijn: Font-size, emotion-slider (om duidelijker de emoties te zien), read full text (Veel tekst had een lagere opacity om als minder afleiding te dienen, maar je kan er ook voor kiezen om deze aan te zetten), dark-mode of zelf de kleuren uitkiezen er emotie.",
+                        "image": "./assets/img/Vakken/HCD/HCD_Frontpage.png"
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "title": "Inzichten",
+                        "content": "Tijdens dit project heb ik meerdere niuewe inzichten gekregen zoals; <ul> <li>Het uitwerken van een website voor één persoon is verassend fijn. Later in het echte bussiness level zal je werken voor meerdere personen of zelfs een heel bedrijf, daar zal het best moeilijk zijn om iedereens wensen bij te houden; maar om de wensen van 1 specifiek persoon uit te werken is zeer fijn. Ik kon snel vragen wat ik moest vragen en Darice gaf altijd netjes feedback waar nodig was.</li> <li>Het is verstandig om de feedback die andere mensen krijgen van Darice ook te verwerken. Ik had vaak dat ik tijdens mijn gesprekken om een stuk feedback vroeg en daar eigenlijk geen input op kreeg, maar in een later gesprek met een andere student vroeg die student hetzelfde en kreeg hij/zij wel input. Om de website zo effectief mogelijk te maken heb ik dus alle feedback van elke student genoteerd en verwerkt in mijn website zodat ik er 100% zeker van ben dat alles naar wens is voor Darice. Uiteraard heb ik dit wel met mate gedaan en niet blind alles toegevoegd, maar wel alles dat relevant was.</li> <li>Het is interessant om toegankelijk te designen. Normaal design je websites die voor iedereen bruikbaar is, maar om het te designen voor iemand met een handicap is wel een uitdaging; je moet jezelf verplaatsen wat zij van de website vindt en hoe zij het gebruikt.</li> <li>Ik heb ook geleerd dat ik eerder en meer gebruik moet maken van tools opp hetinternet. Ik heb een tool gevonden die de transcriptie van een podcast omzet naar bruikbaar materiaal voor een HTMl website, maar voordat ik deze tool had gevonden was ik bezig met alles handmatig uitschrijven. Tools zijn er om het leven makkelijker te maken.</li> </ul>",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "Nog geen ontvangen",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://diegor03.github.io/Human_Centered_Design/",
+                        "websiteInfo" : "Dit is de link naar de HCD podcast website."
                     }
                 ]
             }
@@ -602,22 +663,23 @@
         "Meesterproef": [
             {
                 "eventTitle": "Meesterproef",
-                "involved": "Diego Ramon",
-                "date": "09-04-2026",
+                "involved": "Team",
+                "date": "18-05-2026",
+                "rating" : "-/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "In progressie",
                         "image": ""
                     },
                     {
-                        "title": "Wat heb ik ervan geleerd",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "title": "Inzichten",
+                        "content": "[Geen]",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "Hij kon niks toegankelijk maken zonder het persoon zelf. Om het te voorkomen moet je het voorleggen bij die personen zelf.",
+                        "content": "[Geen]",
                         "image": ""
                     }
                 ],
