@@ -8,7 +8,7 @@ import { NebulaBackground } from './nebula.js';
 // MARK: Const and lets
 const scene = new THREE.Scene();
 const loader = new GLTFLoader();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.01, 15000);
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.01, 15000);
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
 const moonPivot = new THREE.Object3D();
@@ -25,9 +25,9 @@ const infoElement = document.getElementById('info');
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
-const minDistance = 110;
-const maxDistance = 450;
-const zoomSensitivity = 0.5;
+const minDistance = 180;
+const maxDistance = 650;
+const zoomSensitivity = 0.3;
 
 const satellitePivots = [];
 
@@ -45,6 +45,10 @@ loader.load('./assets/models/earth.glb', function (gltf) {
     
     sunLight.position.set(10000, 0, 0);
     camera.position.set(0, 100, 250);
+
+    const atmosphere = createAtmosphere(1.1);
+    atmosphere.scale.set(100, 100, 100);
+    earthModel.add(atmosphere);
 
     scene.add(sunLight, ambientLight, moonPivot, earthModel);
 
@@ -82,8 +86,9 @@ loader.load('./assets/models/satellite.glb',
 
 loader.load('./assets/models/moon.glb', function (gltf) {
     moonModel = gltf.scene;
-    moonModel.position.set(600, 0, 0); 
+    moonModel.position.set(850, 0, 0); 
     moonModel.scale.set(16, 16, 16);
+    moonModel.rotation.y = 180;
     
     moonPivot.add(moonModel);
 });
@@ -112,7 +117,6 @@ function animate() {
     if (nebula) nebula.update();
     if (earthModel) earthModel.rotation.y += 0.0005;
     if (moonPivot) moonPivot.rotation.y += 0.001;
-    if (moonModel) moonModel.rotation.y += 0.001;
 
     controls.enableZoom = false;
     controls.enableDamping = true;
@@ -129,11 +133,11 @@ function animate() {
         const satPosition = new THREE.Vector3();
         satModel.getWorldPosition(satPosition);
 
-        const offsetDistance = (focusedSatellite === moonPivot) ? 50 : 3; 
+        const offsetDistance = (focusedSatellite === moonPivot) ? 50 : 6; 
         const cameraOffset = satPosition.clone().normalize().multiplyScalar(offsetDistance);
         const newCameraPos = satPosition.clone().add(cameraOffset);
 
-        const sideOffset = new THREE.Vector3().crossVectors(cameraOffset, new THREE.Vector3(0, 1, 0)).normalize().multiplyScalar(-1.5);
+        const sideOffset = new THREE.Vector3().crossVectors(cameraOffset, new THREE.Vector3(0, 2, 0)).normalize().multiplyScalar(focusedSatellite === moonPivot ? -25 : -2);
         newCameraPos.add(sideOffset);
 
         camera.position.lerp(newCameraPos, 0.1);
@@ -142,7 +146,7 @@ function animate() {
         controls.enabled = false; 
     } else if (focusedEarth) {
         controls.enabled = false; 
-        const targetPos = new THREE.Vector3(-150, 0, 120); 
+        const targetPos = new THREE.Vector3(-230, 0, 120); 
         const lookAtTarget = new THREE.Vector3(260, 0, 0);
 
         camera.position.lerp(targetPos, 0.05);
@@ -165,8 +169,40 @@ function animate() {
     renderer.render(scene, camera);
 }
 
+// Met behulp van Gemini een shader gemaakt om de atmosfeer na te maken
+// Chat: https://gemini.google.com/share/ab3c0659c835
+function createAtmosphere(radius) {
+    const vertexShader = `
+        varying vec3 vNormal;
+        void main() {
+            vNormal = normalize(normalMatrix * normal);
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    `;
+
+    const fragmentShader = `
+        varying vec3 vNormal;
+        void main() {
+            float intensity = pow(0.7 - dot(vNormal, vec3(0, 0, 1.0)), 2.0);
+            intensity = clamp(intensity, 0.0, 1.0); 
+            gl_FragColor = vec4(0.3, 0.6, 1.0, 0.5) * intensity;
+        }
+    `;
+
+    const geometry = new THREE.SphereGeometry(radius, 64, 64);
+    const material = new THREE.ShaderMaterial({
+        vertexShader,
+        fragmentShader,
+        side: THREE.BackSide,
+        transparent: true
+    });
+
+    return new THREE.Mesh(geometry, material);
+}
+
 animate(); 
 
+// MARK: Window functions
 window.createSatelliteInstance = createSatelliteInstance;
 
 window.focusOnSatellite = (index) => {

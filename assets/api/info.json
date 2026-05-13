@@ -491,7 +491,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil vloeiende en herbruikbare animaties maken met CSS en JavaScript en wil weten waar ik dit toepas.",
-                "hulpmiddelen" : "JS en CSS"
+                "hulpmiddelen" : "<ul> <li>JS</li> <li>CSS</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 2",
@@ -499,7 +499,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil verschillende vormen en visuele elementen kunnen maken met alleen CSS, zonder afbeeldingen.",
-                "hulpmiddelen" : "CSS en Internet"
+                "hulpmiddelen" : "<ul> <li>CSS</li> <li>Internet</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 3",
@@ -507,7 +507,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil API-data kunnen omzetten naar HTML door middel van DOM-manipulatie met JavaScript.",
-                "hulpmiddelen" : "Javascript en JSON/API"
+                "hulpmiddelen" : "<ul> <li>Javascript</li> <li>JSON/API</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 4",
@@ -515,7 +515,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil HTML-elementen kunnen genereren op basis van API-informatie.",
-                "hulpmiddelen" : ""
+                "hulpmiddelen" : "<ul> <li>Javascript</li> <li>JSON/API</li> <li>Html</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 1",
@@ -523,7 +523,7 @@
                 "date" : "15-05-2026",
                 "rating" : "In progressie",
                 "leerdoelinfo" : "Ik wil meer kunnen focussen op één opdracht tegelijkertijd, op dit moment ben ik snel afgeleid en ga ik naar een andere opdracht/functie omdat die bijvoorbeeld in mijn hoofd zit, maar ik moet leren focussen op één tegelijkertijd. Dit is dan bij te houden in Github branches (Bijvoorbeeld een branch maken voor specifiek 1 functie, en deze branch dat ook ALLEEN gebruiken voor die functie)",
-                "hulpmiddelen" : "Github, Html, CSS, Javascript"
+                "hulpmiddelen" : "<ul> <li>Github</li> <li>Html</li> <li>CSS</li> <li>Javascript</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 2",
@@ -531,7 +531,7 @@
                 "date" : "15-05-2026",
                 "rating" : "In progressie",
                 "leerdoelinfo" : "Ik wil beter leren begrijpen wat de klant verwacht in het product. Op dit moment heb ik voornamelijk ervaring met voor één persoon, maar ik wil het voor meerdere klanten/opdrachtgevers leren. Nu weet ik heel goed hoe ik één persoon blij kan maken, maar meerdere personen hebben meerdere meningen en dan kan conflicten met elkaar.",
-                "hulpmiddelen" : "Opdrachtgevers, teamgenoten, HTML, CSS, Javascript"
+                "hulpmiddelen" : "<ul> <li>Opdrachtgevers</li> <li>Teamgenoten</li> <li>HTML</li> <li>CSS</li> <li>Javascript</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 3",
@@ -539,7 +539,7 @@
                 "date" : "15-05-2026",
                 "rating" : "In progressie",
                 "leerdoelinfo" : "Meer leren met AI om te gaan, op dit moment gebruik ik AI alleen af en toe om code te reviewen of problemen op te lossen, maar de toekomst maakt steeds meer gebruik van AI, dus ik wil ook echt leren coderen met AI erbij (Dus bijvoorbeeld Co-Pilot). Hiermee wil ik mijn snelheid van functies maken versnellen en daardoor sneller mooie producten maken.",
-                "hulpmiddelen" : "Claude (AI), Co-Pilot (AI), HTML, CSS, Javascript"
+                "hulpmiddelen" : "<ul> <li>Claude (AI)</li> <li>Co-Pilot (AI)</li> <li>HTML</li> <li>CSS</li> <li>Javascript</li> </ul>"
             }
         ],
         "Vakken": [
