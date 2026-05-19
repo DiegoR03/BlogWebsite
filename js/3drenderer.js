@@ -25,7 +25,7 @@ const infoElement = document.getElementById('info');
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
-const minDistance = 180;
+const minDistance = 125;
 const maxDistance = 650;
 const zoomSensitivity = 0.3;
 
@@ -38,11 +38,12 @@ let targetDistance = 250;
 let focusedSatellite = null;
 let focusedEarth = false;
 let nebula;
+let currentLookAtTarget = new THREE.Vector3(0, 0, 0);
 
 // MARK: Loaders
 loader.load('./assets/models/earth.glb', function (gltf) {
     earthModel = gltf.scene;
-    
+
     sunLight.position.set(10000, 0, 0);
     camera.position.set(0, 100, 250);
 
@@ -70,10 +71,10 @@ loader.load('./assets/models/earth.glb', function (gltf) {
     sunLight.add(lensflare);
 });
 
-loader.load('./assets/models/satellite.glb', 
+loader.load('./assets/models/satellite.glb',
     function (gltf) {
         satelliteModel = gltf.scene;
-        satelliteModel.scale.set(0.15, 0.15, 0.15); 
+        satelliteModel.scale.set(0.15, 0.15, 0.15);
 
         if (window.pendingSatellites > 0) {
             for (let i = 0; i < window.pendingSatellites; i++) {
@@ -86,10 +87,10 @@ loader.load('./assets/models/satellite.glb',
 
 loader.load('./assets/models/moon.glb', function (gltf) {
     moonModel = gltf.scene;
-    moonModel.position.set(850, 0, 0); 
+    moonModel.position.set(850, 0, 0);
     moonModel.scale.set(16, 16, 16);
     moonModel.rotation.y = 180;
-    
+
     moonPivot.add(moonModel);
 });
 
@@ -99,16 +100,16 @@ export function createSatelliteInstance() {
 
     const pivot = new THREE.Object3D();
     const modelClone = satelliteModel.clone();
-    const distance = 105; 
+    const distance = 105;
     modelClone.position.set(distance, 0, 0);
 
     pivot.rotation.z = (Math.random() - 0.5) * Math.PI;
     pivot.rotation.x = (Math.random() - 0.5) * Math.PI;
-    pivot.rotation.y = Math.random() * Math.PI * 2; 
-    
+    pivot.rotation.y = Math.random() * Math.PI * 2;
+
     pivot.add(modelClone);
     scene.add(pivot);
-    satellitePivots.push(pivot); 
+    satellitePivots.push(pivot);
 }
 
 function animate() {
@@ -133,34 +134,45 @@ function animate() {
         const satPosition = new THREE.Vector3();
         satModel.getWorldPosition(satPosition);
 
-        const offsetDistance = (focusedSatellite === moonPivot) ? 50 : 6; 
+        const offsetDistance = (focusedSatellite === moonPivot) ? 50 : 6;
         const cameraOffset = satPosition.clone().normalize().multiplyScalar(offsetDistance);
         const newCameraPos = satPosition.clone().add(cameraOffset);
 
         const sideOffset = new THREE.Vector3().crossVectors(cameraOffset, new THREE.Vector3(0, 2, 0)).normalize().multiplyScalar(focusedSatellite === moonPivot ? -25 : -2);
         newCameraPos.add(sideOffset);
 
+        const finalDistance = newCameraPos.length();
+        const currentDistance = camera.position.length();
         camera.position.lerp(newCameraPos, 0.1);
+
+        const interpolatedDistance = THREE.MathUtils.lerp(currentDistance, finalDistance, 0.1);
+        camera.position.setLength(interpolatedDistance);
+
         camera.lookAt(0, 0, 0);
 
-        controls.enabled = false; 
+        controls.enabled = false;
     } else if (focusedEarth) {
-        controls.enabled = false; 
-        const targetPos = new THREE.Vector3(-230, 0, 120); 
+        controls.enabled = false;
+        const targetPos = new THREE.Vector3(-230, 0, 120);
         const lookAtTarget = new THREE.Vector3(260, 0, 0);
 
+        const finalDistance = targetPos.length();
+        const currentDistance = camera.position.length();
         camera.position.lerp(targetPos, 0.05);
+        const interpolatedDistance = THREE.MathUtils.lerp(currentDistance, finalDistance, 0.05);
+        camera.position.setLength(interpolatedDistance);
 
-        const currentLookAt = new THREE.Vector3();
-        camera.getWorldDirection(currentLookAt);
-        camera.lookAt(lookAtTarget);
+        controls.target.lerp(lookAtTarget, 0.05);
+        camera.lookAt(controls.target);
 
     } else {
         controls.enabled = true;
-        controls.update(); 
+
+        controls.target.lerp(new THREE.Vector3(0, 0, 0), 0.05);
+        controls.update();
 
         const currentDistance = camera.position.length();
-        
+
         if (Math.abs(currentDistance - targetDistance) > 0.1) {
             const newDistance = THREE.MathUtils.lerp(currentDistance, targetDistance, 0.05);
             camera.position.setLength(newDistance);
@@ -200,7 +212,7 @@ function createAtmosphere(radius) {
     return new THREE.Mesh(geometry, material);
 }
 
-animate(); 
+animate();
 
 // MARK: Window functions
 window.createSatelliteInstance = createSatelliteInstance;
@@ -236,7 +248,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('wheel', (event) => {
-    const delta = Math.sign(event.deltaY); 
+    const delta = Math.sign(event.deltaY);
     targetDistance += delta * 15;
     targetDistance = Math.max(minDistance, Math.min(maxDistance, targetDistance));
-}, { passive: true });
+}, {
+    passive: true
+});
