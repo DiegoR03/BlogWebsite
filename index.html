@@ -27,6 +27,12 @@
     </div>
 
     <nav id="titleSelector">
+        <button class="hamburger" aria-label="Menu openen" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
         <ul>
             <li><button onclick="filterByEvent('Weekly Nerd')">Weekly Nerd</button></li>
             <li><button onclick="filterByEvent('Meesterschap')">Meesterschap</button></li>
@@ -42,7 +48,7 @@
     </div>
 
     <div id="details-container">
-        <button onclick="resetFocus()">← Terug naar overzicht</button>
+        <button onclick="goBack()">← Terug naar overzicht</button>
         <div id="details-content">
         </div>
     </div>

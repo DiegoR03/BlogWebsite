@@ -28,6 +28,11 @@ async function loadInfo() {
     }
 }
 
+function toggleMenu() {
+    const nav = document.getElementById('titleSelector');
+    nav.classList.toggle('open');
+}
+
 window.filterByEvent = (selectedEvent) => {
     const selectorContainer = document.getElementById('selector-list');
     const titleSelector = document.getElementById('titleSelector');
@@ -280,6 +285,15 @@ window.handleMoonClick = (index) => {
 
     if (selectorContainer) selectorContainer.style.display = 'none';
     if (detailsContainer) detailsContainer.style.display = 'block';
+};
+
+window.goBack = () => {
+    if (typeof window.focusOnSatellite === 'function') {
+        window.focusOnSatellite(-2);
+    }
+    document.getElementById('titleSelector').style.display = 'none';
+    document.getElementById('selector-container').style.display = 'block';
+    document.getElementById('details-container').style.display = 'none';
 };
 
 window.resetFocus = () => {
