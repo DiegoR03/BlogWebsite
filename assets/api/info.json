@@ -422,6 +422,202 @@
                         "websiteInfo": "Geen"
                     }
                 ]
+            },
+            {
+                "eventTitle": "Privacy",
+                "involved": "Hans de Zwart",
+                "date": "21-05-2026",
+                "rating": "Aanwezig",
+                "infos": [
+                {
+                    "title": "Wat is privacy eigenlijk?",
+                    "content": "Privacy is een individueel recht (met rust gelaten worden, een plek om jezelf te kunnen zijn), een sociaal recht (in elke context anders kunnen zijn, dat lukt niet zonder privacy) en een democratische noodzaak (autonoom je mening kunnen vormen, het moment dat er geen privacy is wordt je mening uiten moeilijk). Mensen zeggen vaak dat ze niks te verbergen hebben, totdat je persoonlijke vragen stelt zoals een pincode of adres."
+                },
+                {
+                    "title": "Privacy als contextuele integriteit",
+                    "content": "Wat we wel en niet willen delen verschilt per context (Dokter, Familie, Vrienden, Werk, etc.). Overal gedraag je je anders en deel je andere dingen. De favoriete denker van Hans de Zwart is Helen [Nissenbaum]. Privacy als contextuele integriteit betekent dat er geen onverwachte dingen gedeeld worden met onverwachte partijen. Het is geen absoluut ding, het is een cultureel ding dat steeds verandert en over controle gaat: heb je wel controle over je eigen gegevens?"
+                },
+                {
+                    "title": "Privacy wetgeving (AVG)",
+                    "content": "De AVG (Algemene Verordening Gegevensbescherming) is verplicht in Europa. Het is eigenlijk gewoon common sense over hoe je met elkaar om zou moeten gaan en gaat over persoonsgegevens (een IP-adres wordt bijvoorbeeld gezien als persoonlijke gegevens). Er zijn verschillende grondslagen: Toestemming (vrij, geïnformeerd en intrekbaar), Noodzakelijk voor de uitvoering van een overeenkomst, Wettelijk verplicht (bijv. 7 jaar gegevens bewaren voor de Belastingdienst), Vitaal belang (bijv. een telefoon openen bij een noodgeval), Algemeen belang of openbaar gezag, en Gerechtvaardigd belang."
+                },
+                {
+                    "title": "Doelbinding en Rechten",
+                    "content": "Bij de AVG geldt doelbinding: je mag de data alleen maar gebruiken voor het doel waarvoor je het verzameld hebt (bijvoorbeeld een voetbalvideo alleen voor voetbal). Als persoon heb je rechten: je mag gegevens inzien, corrigeren en aanvullen, je hebt recht op vergetelheid en je mag data meenemen naar een andere partij (Dataportabiliteit). Door de AVG is data over personen niet alleen maar een asset, maar ook een liability."
+                },
+                {
+                    "title": "Dataminimalisatie & Privacy op het web",
+                    "content": "Om aan de wet te voldoen moet je een strategie toepassen van dataminimalisatie: zo min mogelijk gegevens verwerken. Functionaliteit behouden met maximale privacy kan vaak via cryptografie en slimme algoritmische oplossingen zoals hashes, blind signatures, statistical disclosure control, differential privacy, revocable privacy en attribute based credentials. Er zijn acht strategieën: inform, control, separate, abstract, minimise, demonstrate, enforce en hide. Op de vraag hoeveel partijen van je websitebezoek weten, is het antwoord afhankelijk van de site. Is er nog een websitebezoek dat niet bij Google in beeld is? NEE."
+                }
+                ],
+                "codeTips": [
+                {
+                    "selector": "Dataminimalisatie",
+                    "note": "Zo min mogelijk gegevens verwerken om aan de wet te voldoen en liabilities te verkleinen."
+                },
+                {
+                    "selector": "Acht privacy-strategieën",
+                    "note": "1. inform, 2. control, 3. separate, 4. abstract, 5. minimise, 6. demonstrate, 7. enforce, 8. hide."
+                },
+                {
+                    "selector": "Algoritmische oplossingen",
+                    "note": "Gebruik technieken zoals hashes, blind signatures, statistical disclosure control, differential privacy, revocable privacy en attribute based credentials."
+                }
+                ],
+                "codeExamples": [
+                {
+                    "language": "Geen",
+                    "code": "[Geen]"
+                }
+                ],
+                "websites": [
+                {
+                    "websiteLink": "Geen",
+                    "websiteInfo": "Geen"
+                }
+                ]
+            },
+            {
+                "eventTitle": "Front-end Development, Toegankelijkheid & Offline First",
+                "involved": "Marleen, Peter & Groene pet guy (naam vergeten...)",
+                "date": "04-06-2026",
+                "rating": "Aanwezig",
+                "infos": [
+                {
+                    "title": "Front-end Development in de praktijk",
+                    "content": "Als front-end developer houd je je in het algemeen bezig met code classes, intervisie, het bouwen van plugins en het maken van blog posts. Bij bureaus zoals De Voorhoede zie je dat projecten zoals de DGTL-site worden gemaakt met een CMS, en dat een plugin voor custom tekst open source is gemaakt. Opvallend is dat communicatie met de klant of opdrachtgever vaak meer tijd in beslag neemt dan het werkelijke maken van het product."
+                },
+                {
+                    "title": "Digitale Toegankelijkheid & Design Systems",
+                    "content": "Binnen digitale toegankelijkheid speelt het NL Design System een grote rol. Wat opvalt is dat bijna iedere stad zijn eigen design system lijkt te hebben. Componenten binnen deze systemen werken erg goed wanneer het gaat om het bouwen van verschillende websites die weliswaar op elkaar moeten lijken, maar toch een andere styling en inhoud hebben."
+                },
+                {
+                    "title": "Offline First & PWA Principes",
+                    "content": "Offline first maakt gebruik van PWA (Progressive Web App) technologie, waardoor je kunt navigeren tussen pagina's zonder internet via cached content. De kernprincipes zijn: starten bij 'geen verbinding' en data lokaal opslaan om later te syncen. Gebruikersvoordelen zijn onder andere dat er altijd toegang is (bijv. in het vliegtuig of buitengebieden), er snellere interactie is en het zorgt voor een besparing op batterij en data."
+                },
+                {
+                    "title": "Uitdagingen en Best Practices van Offline First",
+                    "content": "Belangrijke uitdagingen zijn conflictbeheer (wie heeft de autoriteit bij het synchroniseren?), slimme caching & data pruning, en het tonen van een duidelijke sync-status als feedback. Je kiest voor offline first wanneer er slechte connectiviteit wordt verwacht, bij kritieke data-toegang of voor productiviteit & field tools. Essentiële technologieën hiervoor zijn service workers, caching, local storage en databases. Best practices zijn progressive enhancement, change validation, background sync, error handling & retries en performance optimization."
+                }
+                ],
+                "codeTips": [
+                {
+                    "selector": "mix-blend-mode",
+                    "note": "CSS property om verschillende kleuren over elkaar heen te laten gaan en met elkaar te mixen."
+                },
+                {
+                    "selector": "clip-path",
+                    "note": "Gebruikt om een afbeelding achter een tekst af te snijden. Hiermee kan een heading half over een foto geplaatst worden, wat de illusie geeft van een halve filter."
+                },
+                {
+                    "selector": "<ruby>",
+                    "note": "Een HTML-element waarmee je kleine tekst (boven bijvoorbeeld Japanse tekens) kunt plaatsen om de betekenis of uitspraak van een teken uit te leggen."
+                }
+                ],
+                "codeExamples": [
+                {
+                    "language": "css",
+                    "code": ".blend-element {\n  mix-blend-mode: multiply;\n}"
+                },
+                {
+                    "language": "css",
+                    "code": ".clipped-image {\n  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);\n}"
+                },
+                {
+                    "language": "html",
+                    "code": "<ruby>\n  漢 <rt>かん</rt>\n</ruby>"
+                }
+                ],
+                "websites": [
+                {
+                    "websiteLink": "Geen",
+                    "websiteInfo": "Geen"
+                }
+                ]
+            },
+            {
+                "eventTitle": "AI & Toegankelijkheid",
+                "involved": "Leonie",
+                "date": "10-06-2026",
+                "rating": "Aanwezig",
+                "infos": [
+                {
+                    "title": "AI als hulpmiddel bij een visuele beperking",
+                    "content": "Leonie is blind en gebruikt AI als hulpmiddel, al vertrouwt ze het nog niet voor de volle 100%. Shoppen is bijvoorbeeld erg moeilijk voor iemand die blind is. Ze kan AI gebruiken om een foto te laten uitleggen, zodat ze ongeveer weet wat er getoond wordt. Dit kan op elke website worden toegepast en werkt ook op beelden van andere objecten of omgevingen buiten (bijvoorbeeld met een AI-bril), het zoeken van objecten, of via retail agents die helpen met online zoeken (een soort AI Google, zoals innosearch.ai)."
+                },
+                {
+                    "title": "De schaduwzijde van AI op het web",
+                    "content": "AI brengt ook problemen met zich mee. Veel bedrijven gebruiken het nu, maar het web maakt nog steeds fouten, zelfs met AI. Hoe meer fouten en problemen er zijn, hoe meer werk het oplevert. Hoewel AI momenteel compenseert waar het web faalt ('Every intermediary solves a problem'), is het uiteindelijke doel een web dat geen AI nodig heeft om te compenseren. Haar krachtige boodschap hierbij is: 'Accessibility is resistance'."
+                }
+                ],
+                "codeTips": [
+                {
+                    "selector": "Innosearch.ai",
+                    "note": "Een voorbeeld van een AI retail agent die helpt bij het zoeken van gekozen objecten online."
+                }
+                ],
+                "codeExamples": [
+                {
+                    "language": "Geen",
+                    "code": "[Geen]"
+                }
+                ],
+                "websites": [
+                {
+                    "websiteLink": "https://innosearch.ai",
+                    "websiteInfo": "AI-gestuurde zoek- en retail-tool die helpt bij het toegankelijk zoeken van objecten."
+                }
+                ]
+            },
+            {
+                "eventTitle": "Prefers Enhanced Motion & Webfilosofie",
+                "involved": "Cyd",
+                "date": "10-06-2026",
+                "rating": "Aanwezig",
+                "infos": [
+                {
+                    "title": "Open Source en Progressive Enhancement",
+                    "content": "Cyd wil alles open source hebben, hoewel dat er wel voor zorgt dat alles makkelijk te kopiëren is. De visie is dat het web een tool is. Een roltrap is hierbij het perfecte voorbeeld van Progressive Enhancement (PE): als de stroom uitvalt, is het nog steeds een werkende trap (Graceful degradation). PE is binnen webontwikkeling specifiek bedoeld om de website altijd te laten werken, zelfs zonder JavaScript."
+                },
+                {
+                    "title": "Semantics en Menselijke Kracht",
+                    "content": "Bij het bouwen staat semantiek centraal: eerst HTML, eerst de content toevoegen. Een belangrijke realisatie is dat we, om AI effectief te kunnen gebruiken, nog altijd mensen nodig hebben."
+                }
+                ],
+                "codeTips": [
+                {
+                    "selector": "details[name]",
+                    "note": "Door het name-attribuut toe te voegen aan het details-element, zorg je ervoor dat er (net als bij radio-buttons) maar één accordion tegelijkertijd open kan zijn."
+                },
+                {
+                    "selector": "interpolate-size: allow-keywords",
+                    "note": "Een nieuwe CSS-functionaliteit die ervoor zorgt dat je vloeiende transities kunt maken van vaste waardes naar keywords, zoals van height: 0 naar height: auto."
+                },
+                {
+                    "selector": "Popover API",
+                    "note": "Native HTML-functionaliteit om popups of menu's te maken zonder complexe JavaScript, door het popover-attribuut te koppelen aan een popovertarget."
+                }
+                ],
+                "codeExamples": [
+                {
+                    "language": "html",
+                    "code": "\n<details name=\"stappen\">\n  <summary>Stap 1</summary>\n  <p>Inhoud stap 1</p>\n</details>\n<details name=\"stappen\">\n  <summary>Stap 2</summary>\n  <p>Inhoud stap 2</p>\n</details>"
+                },
+                {
+                    "language": "css",
+                    "code": "/* Transitie van 0 naar auto mogelijk maken */\n:root {\n  interpolate-size: allow-keywords;\n}\n\n.card {\n  height: 0;\n  transition: height 0.3s ease;\n}\n\n.card:hover {\n  height: auto;\n}"
+                },
+                {
+                    "language": "html",
+                    "code": "/* Popover API basis structuur */\n<button popovertarget=\"mijn-menu\">Open menu</button>\n\n<nav id=\"mijn-menu\" popover>\n  <ul>\n    <li><a href=\"#\">Link 1</a></li>\n    <li><a href=\"#\">Link 2</a></li>\n  </ul>\n</nav>"
+                }
+                ],
+                "websites": [
+                {
+                    "websiteLink": "Geen",
+                    "websiteInfo": "Geen"
+                }
+                ]
             }
         ],
         "Meesterschap": [
