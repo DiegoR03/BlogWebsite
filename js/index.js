@@ -206,6 +206,7 @@ window.handleSatelliteClick = (index) => {
         ;
     } else if (info.category === "Leerdoelen") {
         const leerdoelTekst = info.leerdoelinfo ? `<p>${info.leerdoelinfo}</p>` : '';
+        const leerdoelbehaaldTekst = info.leerdoelbehaald ? `<p>${info.leerdoelbehaald}</p>` : '';
         const hulpmiddelenTekst = info.hulpmiddelen ? `<p>${info.hulpmiddelen}</p>` : '';
 
         templateHTML = `
@@ -217,6 +218,11 @@ window.handleSatelliteClick = (index) => {
             <section class="infos-section">
                 <h3>Leerdoel</h3>
                 ${leerdoelTekst}
+            </section>
+
+            <section class="infos-section">
+                <h3>Hoe heb ik deze behaald</h3>
+                ${leerdoelbehaaldTekst}
             </section>
 
             ${info.hulpmiddelen ? `

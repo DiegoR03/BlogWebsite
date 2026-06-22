@@ -478,8 +478,8 @@
                 ]
             },
             {
-                "eventTitle": "Front-end Development, Toegankelijkheid & Offline First",
-                "involved": "Marleen, Peter & Groene pet guy (naam vergeten...)",
+                "eventTitle": "Front-end Development",
+                "involved": "Marleen, Peter & Groene pet guy?",
                 "date": "04-06-2026",
                 "rating": "Aanwezig",
                 "infos": [
@@ -687,6 +687,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil vloeiende en herbruikbare animaties maken met CSS en JavaScript en wil weten waar ik dit toepas.",
+                "leerdoelbehaald": "Ik heb veel geëxperimenteerd met CSS en animaties. Dit doe ik al sinds sprint 0, maar is voornamelijk naar boven gekomen tijdens het vak CSS, Hackaton en API. Ik heb tijdens deze vakken heel veel geleerd met animaties te werken, en heb zelfs geleerd dat meeste animaties beter werken als je alleen CSS gebruikt.",
                 "hulpmiddelen" : "<ul> <li>JS</li> <li>CSS</li> </ul>"
             },
             {
@@ -695,6 +696,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil verschillende vormen en visuele elementen kunnen maken met alleen CSS, zonder afbeeldingen.",
+                "leerdoelbehaald": "Tijdens het vak CSS moest ik een Rubiks Kubus bouwen met alleen CSS en HTML, dit was een gigantische uitdaging. Naast de rubiks kubus moest ik de website wel opvrolijken zodat het niet alleen een losse kubus was. Om het op te vrolijken heb ik met puur CSS een achtergrond gebouwd die lijkt op een bureau in combinatie met een raam en zelfs een lamp. Dit was heel gaaf om te maken.",
                 "hulpmiddelen" : "<ul> <li>CSS</li> <li>Internet</li> </ul>"
             },
             {
@@ -703,6 +705,7 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil API-data kunnen omzetten naar HTML door middel van DOM-manipulatie met JavaScript.",
+                "leerdoelbehaald": "Tijdens het vak API heb ik dit leerdoel perfect kunnen uitwerken. Tijdens dit vak mochten wij zelf een API uitkiezen die wij mochten verwerken op een Astro website. Ik heb zelf gekozen voor Nasa's NEO API (Near Earth Objects). Elk object moest zijn eigen html element krijgen via Javascript. Dit vak was perfect voor mijn leerdoel en ik heb precies geleerd wat ik wilde leren.",
                 "hulpmiddelen" : "<ul> <li>Javascript</li> <li>JSON/API</li> </ul>"
             },
             {
@@ -711,31 +714,35 @@
                 "date" : "02-02-2026",
                 "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil HTML-elementen kunnen genereren op basis van API-informatie.",
+                "leerdoelbehaald": "Net zoals leerdoel 3 heb ik tijdens het vak API geleerd om API data om te zetten naar HTML elementen. Tijdens dit vak mochten wij zelf een API uitkiezen die wij mochten verwerken op een Astro website. Ik heb zelf gekozen voor Nasa's NEO API (Near Earth Objects). Elk object moest zijn eigen html element krijgen via Javascript",
                 "hulpmiddelen" : "<ul> <li>Javascript</li> <li>JSON/API</li> <li>Html</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 1",
                 "involved" : "Nieuw",
                 "date" : "15-05-2026",
-                "rating" : "In progressie",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil meer kunnen focussen op één opdracht tegelijkertijd, op dit moment ben ik snel afgeleid en ga ik naar een andere opdracht/functie omdat die bijvoorbeeld in mijn hoofd zit, maar ik moet leren focussen op één tegelijkertijd. Dit is dan bij te houden in Github branches (Bijvoorbeeld een branch maken voor specifiek 1 functie, en deze branch dat ook ALLEEN gebruiken voor die functie)",
+                "leerdoelbehaald": "Tijdens de meesterproef heeft dit leerdoel mij gered van een rommelig proces. Ik heb altijd de neiging gehad om te veel odprachten door elkaar te doen, maar door dit leerdoel aant e houden ben ik erachter gekomen dat een product veel beter kan worden als je complete focus daarop ligt. Ik heb tijdens de meesterproef alleen aan andere opdrachten gewerkt als ik 100% zeker wist dat ik klaar was met de andere. Persoonlijk vond ik dit eigenlijk super fijn en wil ik dit ook aanhouden voor toekomstige projecten.",
                 "hulpmiddelen" : "<ul> <li>Github</li> <li>Html</li> <li>CSS</li> <li>Javascript</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 2",
                 "involved" : "Nieuw",
                 "date" : "15-05-2026",
-                "rating" : "In progressie",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Ik wil beter leren begrijpen wat de klant verwacht in het product. Op dit moment heb ik voornamelijk ervaring met voor één persoon, maar ik wil het voor meerdere klanten/opdrachtgevers leren. Nu weet ik heel goed hoe ik één persoon blij kan maken, maar meerdere personen hebben meerdere meningen en dan kan conflicten met elkaar.",
+                "leerdoelbehaald": "Omdat wij voor een echte klant moesten werken tijdens de meesterproef heb ik dit leerdoel ook perfect weten te behalen. Voordat ik begon aan de meesterproef had ik vaak nog het idee dat ik de producten zelf wilde 'verbeteren', maar tijdens dit project heb ik echt geleerd dat de opdrachtgever echter wint van jouw eigen product. Hier heb ik geleerd mee om te gaan en uiteindelijk heb ik een product opgeleverd waar de opdrachtgever heel blij mee was. Niet alleen de opdrachtgever was blij, maar gemeente Utrecht was ook blij met het product.",
                 "hulpmiddelen" : "<ul> <li>Opdrachtgevers</li> <li>Teamgenoten</li> <li>HTML</li> <li>CSS</li> <li>Javascript</li> </ul>"
             },
             {
                 "eventTitle" : "Leerdoel 3",
                 "involved" : "Nieuw",
                 "date" : "15-05-2026",
-                "rating" : "In progressie",
+                "rating" : "Behaald",
                 "leerdoelinfo" : "Meer leren met AI om te gaan, op dit moment gebruik ik AI alleen af en toe om code te reviewen of problemen op te lossen, maar de toekomst maakt steeds meer gebruik van AI, dus ik wil ook echt leren coderen met AI erbij (Dus bijvoorbeeld Co-Pilot). Hiermee wil ik mijn snelheid van functies maken versnellen en daardoor sneller mooie producten maken.",
-                "hulpmiddelen" : "<ul> <li>Claude (AI)</li> <li>Co-Pilot (AI)</li> <li>HTML</li> <li>CSS</li> <li>Javascript</li> </ul>"
+                "leerdoelbehaald": "Tijdens dit porject heb ik veel te maken gekregen met nieuwe libraries zoals d3.js, maar ook eerder gebruikte onderdelen zoals Astro. Omdat ik nog niet perfect hiermee om kan gaan heb ik hier en daar best wat gebruik gemaakt van AI. Maar inplaats van de code rechtsstreeks over te nemen heb ik samen met AI geprobeert te coderen. Veel reviews te vragen aan AI over mijn code, ook alles goed door te nemen en veel support vragen. Op deze manier begrijp ik de code, én is mijn werk efficientie het hoogst. Ik heb op deze manier heel veel kunnen maken in een best korte tijd. Natuurlijk gebruik ik AI alleen als het nodig is, maar vaak is AI gebruiken om een start te maken vrij handig!",
+                "hulpmiddelen" : "<ul> <li>Claude (AI)</li> <li>Gemini (AI)</li> <li>Co-Pilot (AI)</li> <li>HTML</li> <li>CSS</li> <li>Javascript</li> </ul>"
             }
         ],
         "Vakken": [
@@ -830,7 +837,7 @@
                 "eventTitle": "HCD",
                 "involved": "Solo",
                 "date": "30-03-2026",
-                "rating" : "-/10.0",
+                "rating" : "9.0/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
@@ -865,28 +872,43 @@
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "Voor de meesterproef ben ik bezig geweest met het opnieuw visualiseren van de gegeven data van de Visdeurbel in Utrecht. Ik heb deze opdracht uitgevoerd met een team van 3 andere developers en heb in totaal 5 weken visualisaties ontworpen en uitgewerkt op een Astro website. Onze opdracht voor de visdeurbel was om de bestaande data uit de visdeurbel omt e zetten naar nieuwe en creatieve data-visualisaties. Deze data-visualisaties moeten een nieuw gevoel geven aan de website zonder dat wij gebruik maken van nieuwe kleuren en elementen, wij moeten ons dus heel goed aan de huisstijl houden van Visdeurbel.nl. Iedere developer had zijn eigen 'section' waar hij aan heeft gewerkt, ik was verantwoordelijk voor 2 sections, de header, de footer en het online zetten op onrender. De twee sections die ik heb uitgewerkt zijn 'Visactiviteit deze week' en 'Het beste tijdstip van het seizoen'.",
+                        "content": "Voor de meesterproef ben ik bezig geweest met het opnieuw visualiseren van de gegeven data van de Visdeurbel in Utrecht. Ik heb deze opdracht uitgevoerd met een team van 3 andere developers en heb in totaal 5 weken visualisaties ontworpen en uitgewerkt op een Astro website. Onze opdracht voor de visdeurbel was om de bestaande data uit de visdeurbel omt e zetten naar nieuwe en creatieve data-visualisaties. Deze data-visualisaties moeten een nieuw gevoel geven aan de website zonder dat wij gebruik maken van nieuwe kleuren en elementen, wij moeten ons dus heel goed aan de huisstijl houden van Visdeurbel.nl.",
                         "image": ""
                     },
                     {
+                        "title": "",
+                        "content": "Iedere developer had zijn eigen 'section' waar hij aan heeft gewerkt, ik was verantwoordelijk voor 2 sections, de header, de footer en het online zetten op onrender. De twee sections die ik heb uitgewerkt zijn 'Visactiviteit deze week' en 'Het beste tijdstip van het seizoen'",
+                        "image": "./assets/img/Meesterproef/Meesterproef_Section1_1.png"
+                    },
+                    {
+                        "title": "",
+                        "content": " De eerste section, visactiviteit deze week, was best moeilijk om goed te krijgen. Deze section heb ik later in het project opgepakt en was pittig om te veranderen. De meegegeven versie van de opdrachtgever kon namelijk niet te veel aangepast worden i.v.m. de huisstijl. Uiteindelijk heb ik ervoor gekozen om in het eerste gedeelte de tekst alleen de veranderen en het tweede gedeelte een complete rework te geven. Ik heb ervoor gekozen om een kalender te maken waar je kan zien welke visen zijn gespot in welk gedeelte van de dag. Natuurlijk om consistent te blijven heb ik dezelfde kleuren en vormen gebruikt als op de originele website. Daarnaast heb ik tot de aller laatste dag nog feedback verwerkt zodat de opdrachtgever blij is met mijn product (en het is goed voor mijn leerdoel).",
+                        "image": "./assets/img/Meesterproef/Meesterproef_Section1_2.png"
+                    },
+                    {
+                        "title": "",
+                        "content": "De tweede section is 'Het beste tijdstip van het seizoen'. Deze section was mijn grootste focus binnen dit project. Niet alleen was deze het moeilijkst, maar ook de opdrachtgever vond deze het belangrijkst. Deze visualisatie moet aangeven welk moment binnen het seizoen, de tijd dat de visdeurbel actief is, de meeste visdeurbellers aanwezig zijn en welke vissen zijn gespot. Ik heb uiteindelijk gekozen voor een standaard vlakdiagram waar ik de vormen, kleuren en andere detail van de huisstijl in wilde verwerken. Het grafiek zelf heeft veel aanpassingen gehad over het project heen. Ik begon met een standaard vlakdiagram die op was gedeeld in kolommen maar deze was afgewezen omdat hij nog steeds te simpel was, de tweede iteratie was een aquarium maar ook deze was afgewezen omdat hij te veel afweek van de huisstijl. Bij de derde iteratie was ik terug gegaan naar de standaard vlakdiagram maar bij deze iteratie heb ik details toegevoegd en de indeling van de visdeurbel gebruikt, en dit viel goed. De andere iteraties was eigenlijk de derde iteratie met kleine aanpassingen en toepassingen. Bij de laatste iteratie heb ik alle feedback samengegooid en de eind versie gemaakt. Op basis van de feedback moest ik weer het aquarium toe passen en dat in combinatie met de andere details.",
+                        "image": "./assets/img/Meesterproef/Meesterproef_Section2.png"
+                    },
+                    {
                         "title": "Inzichten",
-                        "content": "[Geen]",
+                        "content": "Tijdens dit project hebt ik meerdere inzichten gekregen. Ten eerste was werken voor een echte opdrachtgever best spannend. Ondanks het feit dat ik het eerder heb gedaan, was dit de eerste keer dat er een kans was dat mijn product ook echt daadwerkelijk werd gebruikt. Ten tweede was het best fijn om leerdoelen vast te stellen, zo kon ik tijdens het maken van het project ook op bepaalde onderdelen focussen inplaats van alles tegelijkertijd doen. Ook vond ik de planning binnen ons team zelf heel fijn.",
                         "image": ""
                     },
                     {
                         "title": "Feedback",
-                        "content": "[Geen]",
+                        "content": "Alle feedback is al verwerkt! (Voor het eindgesprek met de docenten)",
                         "image": ""
                     }
                 ],
                 "website":[
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://datavisdeurbel.onrender.com",
+                        "websiteInfo" : "De link naar de Meesterproef website, dit is de live versie die op onrender staat en ook daadwerkelijk werkt!"
                     },
                     {
-                        "websiteLink" : "Geen",
-                        "websiteInfo" : "Geen"
+                        "websiteLink" : "https://www.figma.com/proto/5VfHJneB0EIACGOBtUbg73/Visdeurbel---website-design---v2---2026--Voor-de-Minor-?page-id=6683%3A7015&node-id=6683-7016&viewport=259%2C419%2C0.11&t=DpAMZ85jaAbrAFVP-1&scaling=contain&content-scaling=fixed",
+                        "websiteInfo" : "De eind presentatie voor de opdrachtgever."
                     }
                 ]
             }

@@ -390,12 +390,12 @@ code {
     margin-top: 1rem;
 }
 
-.info-block {
+.info-block, .infos-section, .tools-section {
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.info-block h4 {
+.info-block h4, #details-content h2 {
     margin: 0 0 5px 0;
     text-transform: uppercase;
     color: #ffae00;
@@ -456,7 +456,6 @@ code {
     animation: glow 2s infinite ease-in-out alternate;
 }
 
-/* De taal boven de code */
 .language-label {
     display: block;
     font-size: 1.2rem;
