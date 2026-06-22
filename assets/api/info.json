@@ -861,11 +861,11 @@
                 "eventTitle": "Meesterproef",
                 "involved": "Team",
                 "date": "18-05-2026",
-                "rating" : "-/10.0",
+                "rating" : "8.5/10.0",
                 "infos": [
                     {
                         "title": "Wat heb ik gemaakt",
-                        "content": "In progressie",
+                        "content": "Voor de meesterproef ben ik bezig geweest met het opnieuw visualiseren van de gegeven data van de Visdeurbel in Utrecht. Ik heb deze opdracht uitgevoerd met een team van 3 andere developers en heb in totaal 5 weken visualisaties ontworpen en uitgewerkt op een Astro website. Onze opdracht voor de visdeurbel was om de bestaande data uit de visdeurbel omt e zetten naar nieuwe en creatieve data-visualisaties. Deze data-visualisaties moeten een nieuw gevoel geven aan de website zonder dat wij gebruik maken van nieuwe kleuren en elementen, wij moeten ons dus heel goed aan de huisstijl houden van Visdeurbel.nl. Iedere developer had zijn eigen 'section' waar hij aan heeft gewerkt, ik was verantwoordelijk voor 2 sections, de header, de footer en het online zetten op onrender. De twee sections die ik heb uitgewerkt zijn 'Visactiviteit deze week' en 'Het beste tijdstip van het seizoen'.",
                         "image": ""
                     },
                     {
@@ -880,6 +880,10 @@
                     }
                 ],
                 "website":[
+                    {
+                        "websiteLink" : "Geen",
+                        "websiteInfo" : "Geen"
+                    },
                     {
                         "websiteLink" : "Geen",
                         "websiteInfo" : "Geen"

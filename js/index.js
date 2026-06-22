@@ -116,12 +116,18 @@ window.handleSatelliteClick = (index) => {
             <li><code>${tip.selector}</code>: ${tip.note}</li>
         `).join('') : '';
 
-        const codeExamplesHTML = info.codeExamples ? info.codeExamples.map(code => `
-            <div class="code-block">
-                <span class="language-label">${code.language}</span>
-                <pre><code>${code.code}</code></pre>
-            </div>
-        `).join('') : '';
+        const codeExamplesHTML = info.codeExamples ? info.codeExamples.map(code => {
+            const veiligeCode = code.code
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
+
+            return `
+                <div class="code-block">
+                    <span class="language-label">${code.language}</span>
+                    <pre><code>${veiligeCode}</code></pre>
+                </div>
+            `;
+        }).join('') : '';
 
             templateHTML = `
             <div class="nerdsInfo">
