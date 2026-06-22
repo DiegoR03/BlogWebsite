@@ -678,6 +678,50 @@
                         "websiteInfo" : "Dit is de link naar de Hackaton website"
                     }
                 ]
+            },
+            {
+                "eventTitle": "Meesterproef reflectie",
+                "involved": "Solo",
+                "date": "22-06-2026",
+                "rating" : "Voldaan",
+                "infos": [
+                    {
+                        "title": "Inleiding",
+                        "content": "Nu ik terug kijk op dit project ben ik zeer tevreden met wat ik heb bereikt, geleerd en gemaakt. In het begin van het project had ik persoonlijk nog best wat moeite met de opdracht, het was niet allemaal even duidelijk en het was veel nieuwe informatie en code die ik in een korte tijd moest leren. Gelukkig heb ik over de tijd van het project heel veel kunnen leren over het verwerken van csv data, astro componenten en alle data omzetten met Javascript. Ik heb ook meer geleerd met AI te werken en niet zo lang koppig te zijn met mijn functies, ik bleef voor dit project vaak hangen aan één functie; maar als ik aan AI had gevraagd hoe ik het kon oplossen dan zou ik er veel sneller door heen zijn geweest. Vooral bij het uitwerken van d3.js componenten heb ik super veel geleerd, hoe ik met .attr kan werken, en bepaalde elementen kan mappen.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Leerdoelen",
+                        "content": "Mijn belangrijkste leerdoel, voor mij, was: Ik wil beter leren begrijpen wat de klant verwacht in het product. Op dit moment heb ik voornamelijk ervaring met voor één persoon, maar ik wil het voor meerdere klanten/opdrachtgevers leren. Nu weet ik heel goed hoe ik één persoon blij kan maken, maar meerdere personen hebben meerdere meningen en dan kan conflicten met elkaar. Ik had voor dit project heel veel moeite met het luisteren naar de opdrachtgever, hoe raar het ook klinkt. Ik wilde altijd mijn eigen verbeteringen toepassen en tonen bij de opdrachtgever, maar dit project heeft mij juist geleerd dat jij als ontwerper niet altijd gelijk hebt. Je kan hele mooie projecten maken, maar uiteindelijk bepaald de opdrachtgever of hij jouw product wilt gebruiken of niet.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Samenwerking",
+                        "content": "Ik vond de samenwerking met mijn team ook heel fijn. Tijdens dit project heb ik met iedereen veel samen gewerkt. Ik heb voornamelijk samengewerkt met Jacco, sinds hij naast mij zat. Samen met hem heb ik veel verschillende functies kunnen maken en zelfs kunnen verbeteren met zijn feedback. Jacco heeft een beter oog voor detail dan ik, dus het was fijn dat iemand mee keek die goed op designs let. De planning binnen het tema verliep ook heel soepel; in het begin moesten wij al ons werk bijhouden via trello, maar op een gegeven moment verliep alles zo soepel dat wij geen trelo meer nodig ahdden, wij hadden dagelijks heel veel contact en zijn ook buiten school uren om in teams meetings geweest.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Highlights Weekly Nerds",
+                        "content": "Ik had twee echte highlights tijdens de Weekly Nerds. De eerste was Niels Leenheer tijdens 'The Web You Want'. Hij was helemaal gefascineerd door klokken en bouwde er zelf een op een klein rond digitaal schermpje. Zijn presentatie was supervet omdat hij grappige interacties liet zien; als je de klok schudde, vielen de wijzers naar de bodem. Hij ging zelfs zo ver dat hij CSS schreef voor een oscilloscoop, waardoor er per ongeluk eentje in de brand vloog! Uiteindelijk kreeg hij er zelfs de game Doom op aan de praat én werkte het op een laser. \n\nDe tweede highlight was Cyd, met een cool verhaal over Open Source en Progressive Enhancement. Cyd vergeleek het web met een roltrap: als de stroom uitvalt, is het nog steeds een werkende trap (Graceful degradation). Zo hoort een website ook altijd te werken, zelfs zonder JavaScript. Eerst HTML en content, daarna pas de rest. Ook kregen we een paar code-tips: het 'name'-attribuut op details voor een native accordeon, 'interpolate-size: allow-keywords' om in CSS soepel naar height: auto te animeren, and de Popover API om heel makkelijk menu's te maken zonder JavaScript-pijn.",
+                        "image": ""
+                    },
+                    {
+                        "title": "Highlights Vakken",
+                        "content": "Als ik alle vier de vakken terug kijk, heb ik val elk vak best wel genoten. Om te beginnen, BT - Browser Tech. Dit vak was zeer itneressant, hoewel dit het dichts bij een standaard website maken zat, heb ik hier wel geleerd dat het heel belangrijk is om je website zo te bouwen dat hij ook functioneert zonder Javascript. Naast BT had ik ook CSS, dit was één van de moeilijkste vakken van deze minor, hier heb ik geleerd om een 3D rubics cube te maken puur met CSS. Het was één van de moeilijkste projecten, maar ik heb er ook super veel mee geleerd; daarnaast heb ik ook heel veel meer respect gekregen voor Javascript. Het derde vak was API, dit was mijn favoriete vak. Bij API moesten wij een website bouwen die data van een online API omzet naar coole elementen de data cool visualiseert. Dit vak heeft mij super veel geleert over API, maar ook over het dynamisch toevoegen van HTMl elementen op basis van API data, dit was hands-down mijn favoriete vak!. En als laatste hebben wij HCD. Dit vak was vaak heel leuk, maar soms ook frustrerend. Ik heb heel veel geleerd qua code structuur, maar ook heel veel over hoe het is om voor een opdrachtgever te werken. Het is vaak lastig om iets te maken voor iemand die niet 100% zelf weet wat zij wilt, dus ik vind dat ik het hier heel goed heb gedaan.",
+                        "image": ""
+                    },
+                    {
+                        "title": "What's Next",
+                        "content": "Voor mijn volgende projecten zou ik nog graag meer willen groeien in hulp vragen en in presenteren. Hoewel in tijdens dit project veel sneller om hulp heb gevraagd dan bij elk ander project ooit, heb ik voor mijn gevoel nog niet genoeg om hulp gevraagd. Ik wachtte vaak tot het laatste moment met hulp vragen terwijl ik veel verder kon zijn in mijn progressie als ik dat vanaf het begin had gedaan. Ook wil ik meer presenteren. Dit project liet ik Mats voornamelijk presenteren sinds hij daar beter in is, maar volgende projecten wil ik ook beter worden in presenteren.",
+                        "image": ""
+                    }
+                ],
+                "website":[
+                    {
+                        "websiteLink" : "https://diegor03.github.io/Hackton_2026_Team_2/",
+                        "websiteInfo" : "Dit is de link naar de Hackaton website"
+                    }
+                ]
             }
         ],
         "Leerdoelen": [
